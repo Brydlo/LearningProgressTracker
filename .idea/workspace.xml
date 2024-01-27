@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09fa6389-16b6-4a0f-a17d-9a1ded97e151" name="Changes" comment="upgraded classes methods and values. Added Exception classes. New classes to add points for students" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Brydlo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="61886833-46e0-4f1d-88ee-31eba2e85c6e" />
+        <option name="url" value="https://github.com/Brydlo/LearningProgressTracker" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddPoints.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddStudents.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/EmailException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/LastNameException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/NameException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/RepetitionEmailException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidPointsCredentials.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidStudentId.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidateCredentials.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/MainMenu.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Points.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Student.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/StudentInputValidator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/statistics/StatisticInteface.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/LearningProgressTrackerTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/MainMenuTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/SampleTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/Match methods/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/Methods/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/src/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/Using deque/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/src/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals()/A pair of methods to be overridden/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals()/Complex numbers/src/Main.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals()/Comprehension (1)/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals()/Comprehension/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals()/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bE8rQGR7vHI7ogztwz1zMGT6K6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Edu.Yaml.Migrate": "true",
+    "Gradle.Tests in 'Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.test'.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/czern/SzkolenieALX_plikiGIT/Kurs ALX/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/task/src/tracker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\czern\SzkolenieALX_plikiGIT\Kurs ALX\Learning Progress Tracker (Java)\Learning Progress Tracker (Java)\task\src\tracker" />
+      <recent name="C:\Users\czern\SzkolenieALX_plikiGIT\Kurs ALX\Learning Progress Tracker (Java)\Learning Progress Tracker (Java)\task\src" />
+      <recent name="C:\Users\czern\SzkolenieALX_plikiGIT\Kurs ALX\Learning Progress Tracker (Java)\Learning Progress Tracker (Java)\task\src\tracker\Exceptions" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Learning_Progress_Tracker_(Java).Topics-Stack-The_LIFO_principle_in_action.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Learning Progress Tracker (Java)" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Learning Progress Tracker (Java)" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.10-temurin-17.0.10-f644763e9732-8a10ee56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SqlInitializationState">
+    <taskDatabasesInitialized>
+      <option value="jdbc:h2:file:C:/Users/czern/SzkolenieALX_plikiGIT/Kurs ALX/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/A detailed record/db/db" />
+      <option value="jdbc:h2:file:C:/Users/czern/SzkolenieALX_plikiGIT/Kurs ALX/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/Retrieving statistics/db/db" />
+      <option value="jdbc:h2:file:C:/Users/czern/SzkolenieALX_plikiGIT/Kurs ALX/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/Verify new users/db/db" />
+    </taskDatabasesInitialized>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09fa6389-16b6-4a0f-a17d-9a1ded97e151" name="Changes" comment="" />
+      <created>1705769076254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705769076254</updated>
+      <workItem from="1705769079966" duration="1159000" />
+      <workItem from="1705770916731" duration="2065000" />
+      <workItem from="1705777179028" duration="16636000" />
+      <workItem from="1706300495821" duration="680000" />
+      <workItem from="1706301230031" duration="1068000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1705776643968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705776643968</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new regular expression NAME_REGEX">
+      <option name="closed" value="true" />
+      <created>1705778963057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705778963057</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new clas ValidateCredentials">
+      <option name="closed" value="true" />
+      <created>1705780784085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705780784085</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new methods in MainMenu class to split credentials and to check results">
+      <option name="closed" value="true" />
+      <created>1705822918977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705822918977</updated>
+    </task>
+    <task id="LOCAL-00005" summary="upgrade Student class and MainMenu.class">
+      <option name="closed" value="true" />
+      <created>1705859528433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705859528433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="new regular expression NAME_REGEX" />
+    <MESSAGE value="new clas ValidateCredentials" />
+    <MESSAGE value="new methods in MainMenu class to split credentials and to check results" />
+    <MESSAGE value="upgrade Student class and MainMenu.class" />
+    <MESSAGE value="upgraded classes methods and values. Added Exception classes. New classes to add points for students" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded classes methods and values. Added Exception classes. New classes to add points for students" />
+  </component>
+</project>
