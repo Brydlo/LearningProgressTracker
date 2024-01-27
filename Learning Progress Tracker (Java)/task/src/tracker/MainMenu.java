@@ -19,6 +19,15 @@ public class MainMenu {
     public void printMenu() {
 
         System.out.println("Learning Progress Tracker");
+        System.out.println("""
+                Menu:
+                1. add students
+                2. add points
+                3. list
+                4. find
+                5. statistic
+                6. back for exit the program""");
+
         while (true) {
             String input = s.nextLine();
             if (input.equalsIgnoreCase("exit")) {
@@ -28,83 +37,10 @@ public class MainMenu {
 
             switch (input) {
                 case "back" -> System.out.println("Enter 'exit' to exit the program.");
-                case "add students" -> {
-                    System.out.println("Enter student credentials or 'back' to return:");
-                    while (true) {
-                        String studentCredentials = s.nextLine();
-                        checkResult(studentCredentials);
-                        if (studentCredentials.equalsIgnoreCase("back")) {
-                            System.out.printf("Total %d students have been added.%n", AddStudents.getMapSize());
-                            break;
-                        } else if (mail.isEmpty() || name.isEmpty() || lastName.isEmpty()) {
-                            System.out.println("Incorrect credentials.");
-                        } else {
-                            try {
-                                Student student = new Student(name, lastName, mail);
-                                AddStudents.newStudent(student);
-                                studentMap = addStudents.getMapOfStudents();
-                                System.out.println("The student has been added.");
-                            } catch (IllegalArgumentException e) {
-                                System.out.println(e.getMessage());
-                            } catch (NameException e) {
-                                System.out.println(e.getMessage());
-                            } catch (LastNameException e) {
-                                System.out.println(e.getMessage());
-                            } catch (EmailException e) {
-                                System.out.println(e.getMessage());
-                            } catch (RepetitionEmailException e) {
-                                System.out.println(e.getMessage());
-                            }
-                        }
-                    }
-                }
-                case "list" -> {
-                    if (AddStudents.getMapSize() == 0) System.out.println("No students found");
-                    else AddStudents.printMapOfStudents();
-                }
-                case "add points" -> {
-                    System.out.println("Enter an id and points or 'back' to return");
-                    while (true) {
-                        String decision = s.nextLine();
-                        String[] splitDecision = decision.split(" ");
-                        if (decision.equals("back")) break;
-                        else {
-                            try {
-                                long id = checkId(splitDecision, addStudents);
-                                long[] pointsArray = checkPoints(splitDecision);
-                                if (pointsMap.containsKey(id)) {
-                                    Points existingPoints = pointsMap.get(id);
-                                    existingPoints.setPoints(pointsArray);
-                                    System.out.println("Points updated.");
-                                } else {
-                                    Points points = new Points(pointsArray);
-                                    pointsMap.put(id, points);
-                                    System.out.println("Points updated.");
-                                }
-                            } catch (ValidStudentId | ValidPointsCredentials e) {
-                                System.out.println(e.getMessage());
-                            }
-                        }
-                    }
-                }
-                case "find" -> {
-                    System.out.println("Enter an id or 'back' to return:");
-                    while (true) {
-                        String searchingNumber = s.nextLine();
-                        if (searchingNumber.equals("back")) break;
-                        else {
-                            long id;
-                            if (!searchingNumber.matches("\\d+")) {
-                                System.out.println("No students found");
-                            } else {
-                                id = Long.parseLong(searchingNumber);
-                                if (studentMap.containsKey(id)) {
-                                    addPoints.printMapOfPoints(id, pointsMap);
-                                } else System.out.printf("No student is found for id=%d", id);
-                            }
-                        }
-                    }
-                }
+                case "add students" -> printAddStudents();
+                case "list" -> printList();
+                case "add points" -> printAddPoints();
+                case "find" -> printFind();
                 default -> System.out.println("Unknown command!");
             }
         }
@@ -153,5 +89,83 @@ public class MainMenu {
     private long[] checkPoints(String[] arrayOfPoints) throws ValidPointsCredentials {
         StudentInputValidator.validStudentPoints(arrayOfPoints);
         return splitNumbers(arrayOfPoints);
+    }
+
+    private void printAddStudents() {
+        System.out.println("Enter student credentials or 'back' to return:");
+        while (true) {
+            String studentCredentials = s.nextLine();
+            checkResult(studentCredentials);
+            if (studentCredentials.equalsIgnoreCase("back")) {
+                System.out.printf("Total %d students have been added.%n", AddStudents.getMapSize());
+                break;
+            } else if (mail.isEmpty() || name.isEmpty() || lastName.isEmpty()) {
+                System.out.println("Incorrect credentials.");
+            } else {
+                try {
+                    Student student = new Student(name, lastName, mail);
+                    AddStudents.newStudent(student);
+                    studentMap = addStudents.getMapOfStudents();
+                    System.out.println("The student has been added.");
+                } catch (IllegalArgumentException e) {
+                    System.out.println(e.getMessage());
+                } catch (NameException e) {
+                    System.out.println(e.getMessage());
+                } catch (LastNameException e) {
+                    System.out.println(e.getMessage());
+                } catch (EmailException e) {
+                    System.out.println(e.getMessage());
+                } catch (RepetitionEmailException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
+    private void printList() {
+        if (AddStudents.getMapSize() == 0) System.out.println("No students found");
+        else AddStudents.printMapOfStudents();
+    }
+    private void printAddPoints() {
+        System.out.println("Enter an id and points or 'back' to return");
+        while (true) {
+            String decision = s.nextLine();
+            String[] splitDecision = decision.split(" ");
+            if (decision.equals("back")) break;
+            else {
+                try {
+                    long id = checkId(splitDecision, addStudents);
+                    long[] pointsArray = checkPoints(splitDecision);
+                    if (pointsMap.containsKey(id)) {
+                        Points existingPoints = pointsMap.get(id);
+                        existingPoints.setPoints(pointsArray);
+                        System.out.println("Points updated.");
+                    } else {
+                        Points points = new Points(pointsArray);
+                        pointsMap.put(id, points);
+                        System.out.println("Points updated.");
+                    }
+                } catch (ValidStudentId | ValidPointsCredentials e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
+    private void printFind() {
+        System.out.println("Enter an id or 'back' to return:");
+        while (true) {
+            String searchingNumber = s.nextLine();
+            if (searchingNumber.equals("back")) break;
+            else {
+                long id;
+                if (!searchingNumber.matches("\\d+")) {
+                    System.out.println("No students found");
+                } else {
+                    id = Long.parseLong(searchingNumber);
+                    if (studentMap.containsKey(id)) {
+                        addPoints.printMapOfPoints(id, pointsMap);
+                    } else System.out.printf("No student is found for id=%d", id);
+                }
+            }
+        }
     }
 }
