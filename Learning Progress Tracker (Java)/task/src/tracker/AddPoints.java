@@ -1,9 +1,11 @@
 package tracker;
 
+import tracker.statistics.StatisticalAnalysis;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class AddPoints {
+public class AddPoints implements StatisticalAnalysis {
 
     private Points points;
     private AddStudents addStudents;
@@ -41,5 +43,25 @@ public class AddPoints {
                 pointsForStudent.getDSA(),
                 pointsForStudent.getDatabases(),
                 pointsForStudent.getSpring());
+    }
+
+    @Override
+    public String averageCompletionPerStudent(long id, Map<Long, Points> pointsMap) {
+        return null;
+    }
+
+    @Override
+    public String coursePopularity(long[] arrayWithPoints) {
+        return null;
+    }
+
+    @Override
+    public String courseActivity(long[] arrayWithPoints) {
+        return null;
+    }
+
+    @Override
+    public long StudentsRanking(Map<Long, Points> pointsMap) {
+        return 0;
     }
 }
