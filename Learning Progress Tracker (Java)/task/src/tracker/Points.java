@@ -1,10 +1,6 @@
 package tracker;
 
-import tracker.statistics.StatisticalAnalysis;
-
-import java.util.Map;
-
-public class Points implements StatisticalAnalysis {
+public class Points {
 
     private long java = 0;
     private long DSA = 0;
@@ -38,24 +34,5 @@ public class Points implements StatisticalAnalysis {
         return spring;
     }
 
-    @Override
-    public String averageCompletionPerStudent(long id, Map<Long, Points> pointsMap) {
-        return null;
-    }
-
-    @Override
-    public String coursePopularity(long[] arrayWithPoints) {
-        return null;
-    }
-
-    @Override
-    public String courseActivity(long[] arrayWithPoints) {
-        return null;
-    }
-
-    @Override
-    public long StudentsRanking(Map<Long, Points> pointsMap) {
-        return 0;
-    }
 }
 //points: Java=12; DSA=13; Databases=14; Spring=15
