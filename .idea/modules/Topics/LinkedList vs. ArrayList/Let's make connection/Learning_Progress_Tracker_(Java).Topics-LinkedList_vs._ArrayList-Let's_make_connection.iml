@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Topics-LinkedList_vs._ArrayList-Let's_make_connection" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/LinkedList vs. ArrayList/Let's make connection" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Learning Progress Tracker (Java)" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/LinkedList vs. ArrayList/Let's make connection">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/LinkedList vs. ArrayList/Let's make connection/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/LinkedList vs. ArrayList/Let's make connection/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/LinkedList vs. ArrayList/Let's make connection/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

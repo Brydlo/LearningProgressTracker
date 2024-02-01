@@ -5,24 +5,9 @@ files:
     text: |
       package tracker;
       
-      import java.util.Scanner;
-      
       public class Main {
           public static void main(String[] args) {
-      
-      
-              final Scanner s = new Scanner(System.in);
-      
-              System.out.println("Learning Progress Tracker");
-              String input = s.nextLine();
-              if (input.isBlank() || input.isEmpty()) {
-                  System.out.println("No input");
-              } else {
-                  switch (input) {
-                      case "exit" -> System.out.println("Bye");
-                      default -> System.out.println("Error: unknown command!");
-                  }
-              }
+              System.out.println("Hello, World!");
           }
       }
     learner_created: false
@@ -311,14 +296,175 @@ files:
     learner_created: false
   - name: test/tracker/MainMenuTest.java
     visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/EmailException.java
-    visible: true
+    text: |-
+      package tracker;
+      
+      import org.junit.jupiter.api.Test;
+      
+      import static org.junit.jupiter.api.Assertions.*;
+      
+      class MainMenuTest {
+      
+          @Test
+          void printMenu() {
+      
+          }
+      }
     learner_created: true
   - name: src/tracker/MainMenu.java
     visible: true
+    text: |
+      package tracker;
+      
+      import java.util.Scanner;
+      
+      public class MainMenu {
+          private static final Scanner s = new Scanner(System.in);
+      
+          public static void printMenu() {
+      
+              System.out.println("Learning Progress Tracker");
+              String input = s.nextLine();
+              while(true) {
+                  if (input.isBlank() || input.isEmpty()) {
+                      System.out.println("No input");
+                  } else if (input.equalsIgnoreCase("exit")) {
+                      System.out.println("Bye");
+                      break;
+                  }
+                  switch (input) {
+                      case "add students" -> {
+                          int count = 0;
+                          System.out.println("Enter student credentials or 'back' to return:");
+                          while (true) {
+                              String studentCredentials = s.nextLine();
+                              if (studentCredentials.equalsIgnoreCase("back")) {
+                                  if(count == 0) System.out.println("Enter 'exit' to exit the program.");
+                                  else System.out.printf("Total %d students have been added.", count);
+                                  break;
+                              } else {
+                                  AddStudents addStudents = new AddStudents(studentCredentials);
+                                  addStudents.newStudent();
+                                  System.out.println("The student has been added.");
+                                  count++;
+                              }
+                          }
+                      }
+                      default -> System.out.println("Error: unknown command!");
+                  }
+              }
+          }
+      }
     learner_created: true
   - name: src/tracker/Student.java
+    visible: true
+    text: |
+      package tracker;
+      
+      import java.util.regex.Matcher;
+      import java.util.regex.Pattern;
+      
+      public class Student {
+          private String name;
+          private String lastName;
+          private String email;
+      
+          private Pattern pattern;
+          private Matcher matcher;
+      
+          private final String regexNameAndLastName = "^[]A-Z][a-z-' ]{2,}$";
+          private final String regexEmail = "^[a-z0-9+_.-]+@[a-z]+\\.[a-z]+$";
+          public Student(String fullName) {
+              String[] splitName = splitMethod(fullName);
+              if (splitName.length < 3) System.out.println("Incorrect credentials.");
+              else {
+                  setName(splitName[0]);
+                  setLastName(splitName[1]);
+                  setEmail(splitName[2]);
+              }
+          }
+          private static String[] splitMethod(String fullName) {
+              String[] splitName = fullName.split(" ");
+              StringBuilder lastName = new StringBuilder();
+              for (int i = 1; i < splitName.length - 1; i++) {
+                  lastName.append(splitName[i]);
+                  if (i != splitName.length - 2) {
+                      lastName.append(" ");
+                  }
+              }
+              String[] result = new String[3];
+              result[0] = splitName[0];
+              result[1] = lastName.toString();
+              result[2] = splitName[splitName.length - 1];
+              return result;
+          }
+          public String getEmail() {
+              return email;
+          }
+      
+          public String getName() {
+              return name;
+          }
+      
+          public void setName(String name) {
+              pattern = Pattern.compile(regexNameAndLastName);
+              matcher = pattern.matcher(name);
+              if (!matcher.matches()) {
+                  System.out.println("Incorrect first name.");
+              } else this.name = name;
+          }
+      
+          public String getLastName() {
+              return lastName;
+          }
+      
+          public void setLastName(String lastName) {
+              pattern = Pattern.compile(regexNameAndLastName);
+              matcher = pattern.matcher(lastName);
+              if (!matcher.matches()) {
+                  System.out.println("Incorrect last name.");
+              } else this.lastName = lastName;
+          }
+      
+          public void setEmail(String email) {
+              pattern = Pattern.compile(regexEmail);
+              matcher = pattern.matcher(email);
+              if (!matcher.matches()) {
+                  System.out.println("Incorrect email.");
+              } else this.email = email;
+      
+          }
+      }
+    learner_created: true
+  - name: src/tracker/AddStudents.java
+    visible: true
+    text: |
+      package tracker;
+      
+      import java.util.HashMap;
+      import java.util.Map;
+      
+      public class AddStudents {
+      
+          private Student student;
+          private Map<Integer, Student> mapOfStudents;
+      
+          public AddStudents(String fullText) {
+              this.student = new Student(fullText);
+              this.mapOfStudents = new HashMap<>();
+          }
+          public Map<Integer, Student> newStudent() {
+              int id = mapOfStudents.size();
+              mapOfStudents.put(id, student);
+              return mapOfStudents;
+          }
+      
+          public Student getStudentId(int id) {
+              return mapOfStudents.get(id);
+          }
+      }
+    learner_created: true
+  - name: src/tracker/StudentInputValidator.java
     visible: true
     learner_created: true
   - name: src/tracker/Exceptions/NameException.java
@@ -327,36 +473,9 @@ files:
   - name: src/tracker/Exceptions/LastNameException.java
     visible: true
     learner_created: true
-  - name: src/tracker/StudentInputValidator.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/AddStudents.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidateCredentials.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Points.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/NewClass.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/AddPoints.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidStudentId.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidPointsCredentials.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/RepetitionEmailException.java
+  - name: src/tracker/Exceptions/EmailException.java
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/learn/step/14397#comment
 status: Solved
-feedback:
-  message: Congratulations!
-  time: "Sun, 21 Jan 2024 17:47:20 UTC"
-record: 1
+record: 2

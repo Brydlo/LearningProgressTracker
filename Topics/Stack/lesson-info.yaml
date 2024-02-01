@@ -1,7 +1,10 @@
 content:
   - Theory
-  - Match methods
-  - The LIFO principle in action
   - Which brackets are balanced
   - Using deque
   - Methods
+  - Match methods
+  - The LIFO principle in action
+  - Getting the max element of a stack
+  - Stack implementation
+  - Deque output

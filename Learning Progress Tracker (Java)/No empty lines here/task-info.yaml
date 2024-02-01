@@ -147,6 +147,21 @@ files:
           useJUnitPlatform()
       }
     learner_created: false
+  - name: src/tracker/MainMenu.java
+    visible: true
+    learner_created: true
+  - name: src/tracker/AddStudents.java
+    visible: true
+    learner_created: true
+  - name: src/tracker/Student.java
+    visible: true
+    learner_created: true
+  - name: test/tracker/MainMenuTest.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/14396#comment
 status: Solved
-record: 2
+feedback:
+  message: Congratulations!
+  time: "Tue, 16 Jan 2024 14:05:56 UTC"
+record: 1

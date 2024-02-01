@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Learning_Progress_Tracker_(Java):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Learning_Progress_Tracker__Java__jar</output-path>
+    <root id="archive" name="Learning_Progress_Tracker_(Java).jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

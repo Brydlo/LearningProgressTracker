@@ -1,5 +1,16 @@
 type: edu
 files:
+  - name: src/tracker/Main.java
+    visible: true
+    text: |
+      package tracker;
+      
+      public class Main {
+          public static void main(String[] args) {
+              System.out.println("Hello, World!");
+          }
+      }
+    learner_created: false
   - name: test/tracker/SampleTest.java
     visible: true
     text: |
@@ -25,32 +36,12 @@ files:
       }
       
       dependencies {
-          testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
-          testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.10.1'
+          testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+          testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.7.1'
       }
       
       test {
           useJUnitPlatform()
-          testLogging {
-              events "passed", "skipped", "failed"
-          }
-      }
-    learner_created: false
-  - name: test/tracker/MainMenuTest.java
-    visible: true
-    text: |-
-      package tracker;
-      
-      import org.junit.jupiter.api.Test;
-      
-      import static org.junit.jupiter.api.Assertions.*;
-      
-      class MainMenuTest {
-      
-          @Test
-          void printMenu() {
-      
-          }
       }
     learner_created: false
   - name: test/LearningProgressTrackerTest.java
@@ -982,51 +973,12 @@ files:
           }
       }
     learner_created: false
-  - name: src/tracker/Exceptions/RepetitionEmailException.java
+  - name: src/tracker/statistics/StatisticalCalculator.java
     visible: true
     learner_created: true
-  - name: src/tracker/Exceptions/EmailException.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/NameException.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/LastNameException.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidateCredentials.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidPointsCredentials.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Exceptions/ValidStudentId.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/StudentInputValidator.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/AddStudents.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/AddPoints.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/MainMenu.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Student.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Points.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/Main.java
-    visible: true
-    learner_created: true
-  - name: src/tracker/statistics/StatisticInteface.java
+  - name: src/tracker/statistics/StatisticalAnalysis.java
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/learn/step/14399#comment
-status: Unchecked
-record: 5
+status: Failed
+record: 3

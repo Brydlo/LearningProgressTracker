@@ -5,8 +5,6 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.vintage/junit-vintage-engine/5.10.1/25cf537c2c253e83ea23eb605310947661c6f763/junit-vintage-engine-5.10.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.vintage/junit-vintage-engine/5.10.1/d1bbf12ee57f9bbd3054d3ae529c0f250281e05a/junit-vintage-engine-5.10.1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
