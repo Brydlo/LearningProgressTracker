@@ -1,16 +1,418 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Learning_Progress_Tracker_(Java):jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e66e0383-c050-4a45-9c22-7d754123bf89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Learning_Progress_Tracker__Java__jar/Learning_Progress_Tracker_(Java).jar" afterDir="false" />
+    <list default="true" id="a313fa0c-4f12-4174-8e2c-92eff9e206ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Learning_Progress_Tracker__Java__jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hyperskill_hs_test_release_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_3_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_junit_3_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_reflect_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_util_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_vintage_junit_vintage_engine_5_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/classes/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-classes-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/classes/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-classes-java.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/classes/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-classes-java.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/annotationProcessor/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-annotationProcessor-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/annotationProcessor/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-annotationProcessor-java.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/annotationProcessor/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-annotationProcessor-java.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/headers/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-headers-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/headers/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-headers-java.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/generated/sources/headers/java/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-generated-sources-headers-java.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/reports/tests/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-reports-tests.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/reports/tests/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-reports-tests.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/reports/tests/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-reports-tests.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/test-results/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-test-results.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/test-results/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-test-results.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/test-results/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-test-results.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/tmp/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-tmp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/tmp/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-tmp.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning Progress Tracker (Java)/task/build/tmp/Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task-build-tmp.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Learning_Progress_Tracker_(Java).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to avoid duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_avoid_duplicates.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to avoid duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_avoid_duplicates.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to avoid duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_avoid_duplicates.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_store_ordered_key-value_pairs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_store_ordered_key-value_pairs.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_collection_to_store_ordered_key-value_pairs.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper sorted collection without duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_sorted_collection_without_duplicates.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper sorted collection without duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_sorted_collection_without_duplicates.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/A proper sorted collection without duplicates/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-A_proper_sorted_collection_without_duplicates.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Even numbers go first/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Even_numbers_go_first.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Even numbers go first/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Even_numbers_go_first.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Even numbers go first/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Even_numbers_go_first.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Removing duplicates and sorting/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Removing_duplicates_and_sorting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Removing duplicates and sorting/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Removing_duplicates_and_sorting.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Removing duplicates and sorting/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Removing_duplicates_and_sorting.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Theory/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Theory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Theory/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Theory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Choosing the right collection/Theory/Learning_Progress_Tracker_(Java).Topics-Choosing_the_right_collection-Theory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Advantages/Learning_Progress_Tracker_(Java).Topics-HashMap-Advantages.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Advantages/Learning_Progress_Tracker_(Java).Topics-HashMap-Advantages.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Advantages/Learning_Progress_Tracker_(Java).Topics-HashMap-Advantages.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Countries and capitals/Learning_Progress_Tracker_(Java).Topics-HashMap-Countries_and_capitals.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Countries and capitals/Learning_Progress_Tracker_(Java).Topics-HashMap-Countries_and_capitals.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Countries and capitals/Learning_Progress_Tracker_(Java).Topics-HashMap-Countries_and_capitals.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same letter/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_letter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same letter/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_letter.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same letter/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_letter.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same pairs/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_pairs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same pairs/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_pairs.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/The same pairs/Learning_Progress_Tracker_(Java).Topics-HashMap-The_same_pairs.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Theory/Learning_Progress_Tracker_(Java).Topics-HashMap-Theory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Theory/Learning_Progress_Tracker_(Java).Topics-HashMap-Theory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/Theory/Learning_Progress_Tracker_(Java).Topics-HashMap-Theory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/When to use/Learning_Progress_Tracker_(Java).Topics-HashMap-When_to_use.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/When to use/Learning_Progress_Tracker_(Java).Topics-HashMap-When_to_use.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/HashMap/When to use/Learning_Progress_Tracker_(Java).Topics-HashMap-When_to_use.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for ArrayList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_ArrayList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for ArrayList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_ArrayList.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for ArrayList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_ArrayList.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for LinkedList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_LinkedList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for LinkedList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_LinkedList.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Fast for LinkedList/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Fast_for_LinkedList.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Let's make connection/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Let's_make_connection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Let's make connection/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Let's_make_connection.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Let's make connection/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Let's_make_connection.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Remove the same/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Remove_the_same.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Remove the same/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Remove_the_same.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Remove the same/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Remove_the_same.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/The fair exchange/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-The_fair_exchange.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/The fair exchange/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-The_fair_exchange.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/The fair exchange/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-The_fair_exchange.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Theory/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Theory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Theory/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Theory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Theory/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Theory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Transfer both lists/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Transfer_both_lists.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Transfer both lists/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Transfer_both_lists.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/LinkedList vs. ArrayList/Transfer both lists/Learning_Progress_Tracker_(Java).Topics-LinkedList_vs._ArrayList-Transfer_both_lists.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Deque output/Learning_Progress_Tracker_(Java).Topics-Stack-Deque_output.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Deque output/Learning_Progress_Tracker_(Java).Topics-Stack-Deque_output.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Deque output/Learning_Progress_Tracker_(Java).Topics-Stack-Deque_output.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Getting the max element of a stack/Learning_Progress_Tracker_(Java).Topics-Stack-Getting_the_max_element_of_a_stack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Getting the max element of a stack/Learning_Progress_Tracker_(Java).Topics-Stack-Getting_the_max_element_of_a_stack.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Getting the max element of a stack/Learning_Progress_Tracker_(Java).Topics-Stack-Getting_the_max_element_of_a_stack.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Match methods/Learning_Progress_Tracker_(Java).Topics-Stack-Match_methods.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Match methods/Learning_Progress_Tracker_(Java).Topics-Stack-Match_methods.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Match methods/Learning_Progress_Tracker_(Java).Topics-Stack-Match_methods.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Methods/Learning_Progress_Tracker_(Java).Topics-Stack-Methods.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Methods/Learning_Progress_Tracker_(Java).Topics-Stack-Methods.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Methods/Learning_Progress_Tracker_(Java).Topics-Stack-Methods.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Stack implementation/Learning_Progress_Tracker_(Java).Topics-Stack-Stack_implementation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Stack implementation/Learning_Progress_Tracker_(Java).Topics-Stack-Stack_implementation.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Stack implementation/Learning_Progress_Tracker_(Java).Topics-Stack-Stack_implementation.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/The LIFO principle in action/Learning_Progress_Tracker_(Java).Topics-Stack-The_LIFO_principle_in_action.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/The LIFO principle in action/Learning_Progress_Tracker_(Java).Topics-Stack-The_LIFO_principle_in_action.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/The LIFO principle in action/Learning_Progress_Tracker_(Java).Topics-Stack-The_LIFO_principle_in_action.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Theory/Learning_Progress_Tracker_(Java).Topics-Stack-Theory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Theory/Learning_Progress_Tracker_(Java).Topics-Stack-Theory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Theory/Learning_Progress_Tracker_(Java).Topics-Stack-Theory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Using deque/Learning_Progress_Tracker_(Java).Topics-Stack-Using_deque.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Using deque/Learning_Progress_Tracker_(Java).Topics-Stack-Using_deque.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Using deque/Learning_Progress_Tracker_(Java).Topics-Stack-Using_deque.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Which brackets are balanced/Learning_Progress_Tracker_(Java).Topics-Stack-Which_brackets_are_balanced.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Which brackets are balanced/Learning_Progress_Tracker_(Java).Topics-Stack-Which_brackets_are_balanced.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/Stack/Which brackets are balanced/Learning_Progress_Tracker_(Java).Topics-Stack-Which_brackets_are_balanced.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Duplicate_elements_in_HashSet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Duplicate_elements_in_HashSet.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Duplicate_elements_in_HashSet.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Theory/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Theory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Theory/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Theory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Topics/hashCode() and equals() in Collections/Theory/Learning_Progress_Tracker_(Java).Topics-hashCode___and_equals___in_Collections-Theory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Learning_Progress_Tracker_(Java).util.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Learning_Progress_Tracker_(Java).util.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Learning_Progress_Tracker_(Java).util.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/A detailed record/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/A detailed record/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/A detailed record/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/No empty lines here/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/No empty lines here/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/No empty lines here/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Notification service/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Notification service/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Notification service/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Retrieving statistics/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Retrieving statistics/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Retrieving statistics/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Verify new users/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Verify new users/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/Verify new users/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/AddPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/AddStudents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/EmailException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/LastNameException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/NameException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/RepetitionEmailException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/ValidPointsCredentials.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/ValidStudentId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Exceptions/ValidateCredentials.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Points.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/main/tracker/StudentInputValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/test/LearningProgressTrackerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/test/tracker/MainMenuTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/classes/java/test/tracker/SampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/classes/LearningProgressTrackerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/classes/tracker.MainMenuTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/classes/tracker.SampleTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/reports/tests/test/packages/tracker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/TEST-LearningProgressTrackerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/TEST-tracker.MainMenuTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/TEST-tracker.SampleTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/out/production/classes/tracker/AddStudents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/out/production/classes/tracker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/out/production/classes/tracker/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/out/production/classes/tracker/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddPoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddStudents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/EmailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/LastNameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/NameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/RepetitionEmailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidPointsCredentials.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidStudentId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidateCredentials.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Points.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/StudentInputValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/statistics/StatisticalAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/statistics/StatisticalCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/LearningProgressTrackerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/MainMenuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/SampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to avoid duplicates/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to avoid duplicates/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to avoid duplicates/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to avoid duplicates/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper collection to store ordered key-value pairs/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper sorted collection without duplicates/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper sorted collection without duplicates/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper sorted collection without duplicates/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/A proper sorted collection without duplicates/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Even numbers go first/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Even numbers go first/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Even numbers go first/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Even numbers go first/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Removing duplicates and sorting/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Removing duplicates and sorting/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Removing duplicates and sorting/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Removing duplicates and sorting/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Theory/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Choosing the right collection/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Advantages/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Advantages/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Advantages/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Advantages/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate hash code/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate hash code/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate hash code/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate hash code/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate index/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate index/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate index/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Calculate index/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Countries and capitals/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Countries and capitals/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Countries and capitals/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Countries and capitals/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same letter/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same letter/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same letter/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same letter/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same pairs/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same pairs/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same pairs/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/The same pairs/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Theory/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/When to use/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/When to use/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/When to use/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/When to use/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/HashMap/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for ArrayList/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for ArrayList/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for ArrayList/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for ArrayList/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for LinkedList/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for LinkedList/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for LinkedList/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for LinkedList/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Let's make connection/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Let's make connection/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Let's make connection/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Let's make connection/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Remove the same/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Remove the same/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Remove the same/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Remove the same/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/The fair exchange/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/The fair exchange/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/The fair exchange/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/The fair exchange/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Theory/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Transfer both lists/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Transfer both lists/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Transfer both lists/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Transfer both lists/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Deque output/out/production/classes/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Deque output/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Deque output/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Deque output/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Deque output/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Match methods/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Match methods/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Match methods/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Match methods/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Methods/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Methods/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Methods/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Methods/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Stack implementation/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Stack implementation/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Stack implementation/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Stack implementation/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Theory/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Using deque/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Using deque/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Using deque/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Using deque/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Stack/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/HashSet and mutations/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/HashSet and mutations/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/HashSet and mutations/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/HashSet and mutations/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Mutation trick/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Mutation trick/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Mutation trick/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Mutation trick/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Theory/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/section-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Learning_Progress_Tracker__Java__jar/Learning_Progress_Tracker_(Java).jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,255 +424,63 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/build.gradle" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddPoints.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/AddStudents.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/EmailException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/LastNameException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/NameException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/RepetitionEmailException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidPointsCredentials.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidStudentId.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Exceptions/ValidateCredentials.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/MainMenu.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Points.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/Student.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/src/tracker/StudentInputValidator.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/LearningProgressTrackerTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/MainMenuTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Learning Progress Tracker (Java)/task/test/tracker/SampleTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Choosing the right collection/Even numbers go first/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Choosing the right collection/Removing duplicates and sorting/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/Advantages/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/Calculate hash code/answer.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/Calculate index/answer.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/Countries and capitals/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/The same letter/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/The same pairs/src/Main.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/HashMap/When to use/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for ArrayList/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Fast for LinkedList/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Let's make connection/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Remove the same/src/Main.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/The fair exchange/src/Main.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/LinkedList vs. ArrayList/Transfer both lists/src/Main.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Deque output/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Match methods/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Methods/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/The LIFO principle in action/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Using deque/src/Task.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/Stack/Which brackets are balanced/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Duplicate elements in HashSet/src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/HashSet and mutations/answer.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Mutation trick/answer.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Topics/hashCode() and equals() in Collections/Theory/src/Task.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2b2W3qU50SrTYKvZD7kcHZxM6uk" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2bkxhj7GCqkoPFomTf7kaox4Lfq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Task.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Edu.Yaml.Migrate": "true",
-    "Gradle.CalculatorTest.executor": "Run",
-    "Gradle.CalculatorTest.testAddition.executor": "Run",
-    "Gradle.CalculatorTest.testEquality.executor": "Run",
-    "Gradle.CalculatorTests.executor": "Run",
-    "Gradle.CalculatorTests.testAddition.executor": "Run",
-    "Gradle.Tests in 'Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.test'.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "developWork",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Progress/LearningProgressTracker",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="tracker" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Task">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Learning_Progress_Tracker_(Java).Topics-Stack-The_LIFO_principle_in_action.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tracker.Main" />
-      <module name="Learning_Progress_Tracker_(Java).Learning_Progress_Tracker__Java_-task.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tracker.Exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task" />
-      <module name="Learning_Progress_Tracker_(Java).Topics-Stack-Deque_output.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":Learning_Progress_Tracker__Java_-task:test" />
-            <option value="--tests" />
-            <option value="&quot;tracker.CalculatorTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CalculatorTest.testEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":Learning_Progress_Tracker__Java_-task:test" />
-            <option value="--tests" />
-            <option value="&quot;tracker.CalculatorTest.testEquality&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Task" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.CalculatorTest.testEquality" />
-        <item itemvalue="Gradle.CalculatorTest" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-f644763e9732-af3fa2b8" />
+        <option value="jdk-17.0.10-temurin-17.0.10-f644763e9732-8a10ee56" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SqlInitializationState">
     <taskDatabasesInitialized>
-      <option value="jdbc:h2:file:C:/Users/tomaszc/IdeaProjects/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/A detailed record/db/db" />
-      <option value="jdbc:h2:file:C:/Users/tomaszc/IdeaProjects/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/No empty lines here/db/db" />
-      <option value="jdbc:h2:file:C:/Users/tomaszc/IdeaProjects/Learning Progress Tracker (Java)/Learning Progress Tracker (Java)/Verify new users/db/db" />
+      <option value="jdbc:h2:file:C:/Progress/Learning Progress Tracker (Java)/Retrieving statistics/db/db" />
     </taskDatabasesInitialized>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e66e0383-c050-4a45-9c22-7d754123bf89" name="Changes" comment="" />
-      <created>1705413457694</created>
+      <changelist id="a313fa0c-4f12-4174-8e2c-92eff9e206ef" name="Changes" comment="" />
+      <created>1706773000195</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1705413457694</updated>
-      <workItem from="1705413696420" duration="16930000" />
-      <workItem from="1705560729032" duration="13595000" />
-      <workItem from="1705913702239" duration="950000" />
-      <workItem from="1705914660768" duration="217000" />
-      <workItem from="1705915101393" duration="3676000" />
-      <workItem from="1706001487798" duration="11994000" />
-      <workItem from="1706084753831" duration="3060000" />
-      <workItem from="1706098272515" duration="6944000" />
-      <workItem from="1706164034495" duration="767000" />
-      <workItem from="1706165627173" duration="10000" />
-      <workItem from="1706165695106" duration="36000" />
-      <workItem from="1706165742865" duration="44725000" />
+      <updated>1706773000195</updated>
+      <workItem from="1706773002427" duration="402000" />
     </task>
     <servers />
   </component>
