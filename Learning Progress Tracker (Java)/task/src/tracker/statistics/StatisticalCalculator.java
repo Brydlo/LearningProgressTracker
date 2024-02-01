@@ -2,7 +2,6 @@ package tracker.statistics;
 
 import tracker.Points;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -36,33 +35,11 @@ public class StatisticalCalculator implements StatisticalAnalysis {
             if (points.getSpring() != 0) coursePopularityMap.put("Spring", coursePopularityMap.get("Spring") + 1);
         }
         return coursePopularityMap;
-=======
-import java.util.Map;
 
-public class StatisticalCalculator implements StatisticalAnalysis {
-    @Override
-    public String averageCompletionPerStudent(long id, Map<Long, Points> pointsMap) {
-        return null;
-    }
 
-    @Override
-    public String coursePopularity(long[] arrayWithPoints) {
-        return null;
->>>>>>> 118d774ee78d33d18b64aa1c9a23645e2da491bc
-    }
-
-    @Override
-    public String courseActivity(long[] arrayWithPoints) {
-<<<<<<< HEAD
-
-=======
->>>>>>> 118d774ee78d33d18b64aa1c9a23645e2da491bc
-        return null;
-    }
 
     @Override
     public long StudentsRanking(Map<Long, Points> pointsMap) {
-<<<<<<< HEAD
 
         return 0;
     }
@@ -89,8 +66,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         System.out.printf("Most popular: %s%nLeast popular: %s", String.join(", ", maxKeys),
                 String.join(", ", minKeys));
     }
-=======
         return 0;
     }
->>>>>>> 118d774ee78d33d18b64aa1c9a23645e2da491bc
+
 }
