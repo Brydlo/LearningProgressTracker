@@ -13,6 +13,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private static final double SPRING_POINTS_TO_COMPLETE = 550.0;
     private Map<Long, Map<String, Double>> averageMap = new HashMap<>();
     private Map<String, Double> courseProgressMap = new HashMap<>();
+    private Map<String, Long> courseActivity = new HashMap<>();
 
     public StatisticalCalculator() {
         setCoursePopularityPoints();
@@ -20,7 +21,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
 
     @Override
     public void averageCompletionPerStudent(long id, Map<Long, Points> pointsMap) {
-        setAverageMap(id, pointsMap);
+
     }
 
     @Override
@@ -34,8 +35,8 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     @Override
-    public void StudentsRanking(Map<Long, Points> pointsMap) {
-
+    public void StudentsRanking(long id, Map<Long, Points> pointsMap) {
+        setAverageMap(id, pointsMap);
     }
 
     public void printStudentRating(String courseName, Map<Long, Points> pointsMap) {

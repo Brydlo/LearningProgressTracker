@@ -48,7 +48,7 @@ public interface StatisticalAnalysis {
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
      * @return the long representation of the students' ranking
      */
-    void StudentsRanking(Map<Long, Points> pointsMap);
+    void StudentsRanking(long id, Map<Long, Points> pointsMap);
 
 
 }
