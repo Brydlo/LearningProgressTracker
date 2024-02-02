@@ -29,7 +29,7 @@ public interface StatisticalAnalysis {
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
      * @return Map<String, Integer> representation of the course popularity
      */
-    void coursePopularity(long id, Map<Long, Points> pointsMap);
+    void coursePopularity(long id, long[] arrayWithPoint);
 
 
     /**

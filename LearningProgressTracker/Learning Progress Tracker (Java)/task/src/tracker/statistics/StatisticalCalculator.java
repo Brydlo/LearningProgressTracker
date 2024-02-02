@@ -13,7 +13,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private static final double SPRING_POINTS_TO_COMPLETE = 550.0;
     private Map<Long, Map<String, Double>> averageMap = new HashMap<>();
     private Map<String, Double> courseProgressMap = new HashMap<>();
-    private Map<String, Long> courseActivity = new HashMap<>();
+    private Map<String, Long> courseActivityMap = new HashMap<>();
 
     public StatisticalCalculator() {
         setCoursePopularityPoints();
@@ -25,13 +25,22 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     @Override
-    public void coursePopularity(long id, Map<Long, Points> pointsMap) {
-        setCoursePopularity(id, pointsMap);
+    public void coursePopularity(long id, long[] arrayWithPoints) {
+        setCoursePopularity(id, arrayWithPoints);
+        setCourseActivity();
     }
 
     @Override
     public void courseActivity(long[] arrayWithPoints) {
-
+        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
+        int i = 0;
+        for (long points : arrayWithPoints) {
+            if (points > 0) {
+                courseActivityMap.put(courseNames[i],courseActivityMap
+                                .getOrDefault(courseNames[i], 0L) + 1);
+            }
+            ++i;
+        }
     }
 
     @Override
@@ -39,7 +48,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         setAverageMap(id, pointsMap);
     }
 
-    public void printStudentRating(String courseName, Map<Long, Points> pointsMap) {
+    public void printStudentRanking(String courseName, Map<Long, Points> pointsMap) {
         printAverageCompletion(courseName, pointsMap);
     }
 
@@ -53,12 +62,16 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         this.coursePopularityPoints.put("Databases", 0L);
         this.coursePopularityPoints.put("Spring", 0L);
     }
+    private void setCourseActivity() {
+        this.courseActivityMap.put("Java", 0L);
+        this.courseActivityMap.put("DSA", 0L);
+        this.courseActivityMap.put("Databases", 0L);
+        this.courseActivityMap.put("Spring", 0L);
+    }
 
     private Map<Long, Map<String, Double>> setAverageMap(long id, Map<Long, Points> pointsMap) {
         Points studentPoints = pointsMap.get(id);
-        Map<String, Double> studentCourseProgress = courseProgressMap.containsKey(id)
-                ? courseProgressMap
-                : new HashMap<>();
+        Map<String, Double> studentCourseProgress = averageMap.getOrDefault(id, new HashMap<>());
         double currentJava = studentCourseProgress.getOrDefault("Java", 0.0)
                 + ((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Java", currentJava);
@@ -80,17 +93,21 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         return averageMap;
     }
 
-    private Map<String, Long> setCoursePopularity(long id, Map<Long, Points> pointsMap) {
+    private Map<String, Long> setCoursePopularity(long id, long[] arrayWithPoints) {
+        String[] namesArray = {"Java", "DSA", "Database", "Spring"};
+        int i = 0;
         if (!setOfIDs.contains(id)) {
             setOfIDs.add(id);
-            Points studentPoints = pointsMap.get(id);
-            if (studentPoints.getJava() != 0) coursePopularityPoints.put("Java", coursePopularityPoints.get("Java") + 1);
-            if (studentPoints.getDSA() != 0) coursePopularityPoints.put("DSA", coursePopularityPoints.get("DSA") + 1);
-            if (studentPoints.getDatabases() != 0) coursePopularityPoints.put("Database", coursePopularityPoints.get("Database") + 1);
-            if (studentPoints.getSpring() != 0) coursePopularityPoints.put("Spring", coursePopularityPoints.get("Spring") + 1);
+            for (long array : arrayWithPoints) {
+                if (array > 0) coursePopularityPoints.put(namesArray[i],
+                        coursePopularityPoints
+                                .getOrDefault(namesArray[i], 0L) + 1);
+            }
+            return coursePopularityPoints;
         }
         return coursePopularityPoints;
     }
+
     private void printPopularityMethod() {
         long minValue = Long.MAX_VALUE;
         long maxValue = Long.MIN_VALUE;
@@ -118,11 +135,11 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         list.sort((entry1, entry2) -> {
            Points points1 = pointsMap.get(entry1.getKey());
            Points points2 = pointsMap.get(entry2.getKey());
-            return switch (name.toLowerCase()) {
-                case "java" -> Long.compare(points1.getJava(), points2.getJava());
-                case "dsa" -> Long.compare(points1.getDSA(), points2.getDSA());
-                case "databases" -> Long.compare(points1.getDatabases(), points2.getDatabases());
-                case "spring" -> Long.compare(points1.getSpring(), points2.getSpring());
+            return switch (name) {
+                case "Java" -> Long.compare(points2.getJava(), points1.getJava());
+                case "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
+                case "Databases" -> Long.compare(points2.getDatabases(), points1.getDatabases());
+                case "Spring" -> Long.compare(points2.getSpring(), points1.getSpring());
                 default -> throw new IllegalArgumentException("Invalid course name: " + name);
             };
         });
@@ -141,7 +158,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
                     case "Spring" -> pointsFromMap.getSpring();
                     default -> throw new IllegalArgumentException("Invalid course name: " + name);
                 };
-                System.out.printf("%d\t%d\t%.2f%n", studentId, points, courseProgress.get(name));
+                System.out.printf("%d\t%d\t%.2f%%n", studentId, points, courseProgress.get(name));
             }
         }
     }
