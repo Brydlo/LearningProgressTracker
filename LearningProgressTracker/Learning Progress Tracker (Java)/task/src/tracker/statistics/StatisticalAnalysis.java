@@ -19,7 +19,7 @@ public interface StatisticalAnalysis {
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
      * @return the string representation of the average completion per student.
      */
-    Map<Long, Map<String, Double>> averageCompletionPerStudent(long id, Map<Long, Points> pointsMap);
+    void averageCompletionPerStudent(long id, Map<Long, Points> pointsMap);
 
 
     /**
@@ -29,7 +29,7 @@ public interface StatisticalAnalysis {
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
      * @return Map<String, Integer> representation of the course popularity
      */
-    Map<String, Long> coursePopularity(long id, Map<Long, Points> pointsMap, Points points);
+    void coursePopularity(long id, Map<Long, Points> pointsMap);
 
 
     /**
@@ -38,7 +38,7 @@ public interface StatisticalAnalysis {
      * @param arrayWithPoints the array of points
      * @return the string representation of the course activity
      */
-    String courseActivity(long[] arrayWithPoints);
+    void courseActivity(long[] arrayWithPoints);
 
 
     /**
@@ -48,7 +48,7 @@ public interface StatisticalAnalysis {
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
      * @return the long representation of the students' ranking
      */
-    long StudentsRanking(Map<Long, Points> pointsMap);
+    void StudentsRanking(Map<Long, Points> pointsMap);
 
 
 }
