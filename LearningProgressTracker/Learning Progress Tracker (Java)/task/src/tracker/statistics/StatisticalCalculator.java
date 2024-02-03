@@ -57,7 +57,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         this.courseActivityMap.put("Spring", 0L);
     }
 
-    private Map<Long, Map<String, Double>> setAverageMap(long id, Map<Long, Points> pointsMap) {
+    private void setAverageMap(long id, Map<Long, Points> pointsMap) {
         Points studentPoints = pointsMap.get(id);
         Map<String, Double> studentCourseProgress = averageMap.getOrDefault(id, new HashMap<>());
         double currentJava = studentCourseProgress.getOrDefault("Java", 0.0)
