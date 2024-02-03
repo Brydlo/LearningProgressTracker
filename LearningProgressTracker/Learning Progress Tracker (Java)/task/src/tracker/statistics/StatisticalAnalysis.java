@@ -12,24 +12,9 @@ public interface StatisticalAnalysis {
 
 
     /**
-     * Computes the average completion for a specific student based on the given map of points.
-     *
-     * @param id the ID of the student
-     * @param pointsMap the map of points,
-     *                  where each key is an ID of the student and the associated Points object represents the student's points.
-     * @return the string representation of the average completion per student.
-     */
-    void averageCompletionPerStudent(long id, Map<Long, Points> pointsMap);
-
-
-    /**
      * Computes the popularity of the courses based on the given array of points.
-     *
-     * @param pointsMap the map of points,
-     *                  where each key is an ID of the student and the associated Points object represents the student's points.
-     * @return Map<String, Integer> representation of the course popularity
      */
-    void coursePopularity(long id, long[] arrayWithPoint);
+    void coursePopularity(long[] arrayWithPoint);
 
 
     /**
@@ -46,7 +31,6 @@ public interface StatisticalAnalysis {
      *
      * @param pointsMap the map of points,
      *                  where each key is an ID of the student and the associated Points object represents the student's points.
-     * @return the long representation of the students' ranking
      */
     void StudentsRanking(long id, Map<Long, Points> pointsMap);
 

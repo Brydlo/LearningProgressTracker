@@ -16,31 +16,19 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private Map<String, Long> courseActivityMap = new HashMap<>();
 
     public StatisticalCalculator() {
+        setCourseActivityPoints();
         setCoursePopularityPoints();
     }
 
     @Override
-    public void averageCompletionPerStudent(long id, Map<Long, Points> pointsMap) {
+    public void coursePopularity(long[] arrayWithPoints) {
+        setCoursePopularity(arrayWithPoints);
 
-    }
-
-    @Override
-    public void coursePopularity(long id, long[] arrayWithPoints) {
-        setCoursePopularity(id, arrayWithPoints);
-        setCourseActivity();
     }
 
     @Override
     public void courseActivity(long[] arrayWithPoints) {
-        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
-        int i = 0;
-        for (long points : arrayWithPoints) {
-            if (points > 0) {
-                courseActivityMap.put(courseNames[i],courseActivityMap
-                                .getOrDefault(courseNames[i], 0L) + 1);
-            }
-            ++i;
-        }
+        setCourseActivityMap(arrayWithPoints);
     }
 
     @Override
@@ -49,7 +37,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     public void printStudentRanking(String courseName, Map<Long, Points> pointsMap) {
-        printAverageCompletion(courseName, pointsMap);
+        printRanking(courseName, pointsMap);
     }
 
     public void printPopularity() {
@@ -62,7 +50,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         this.coursePopularityPoints.put("Databases", 0L);
         this.coursePopularityPoints.put("Spring", 0L);
     }
-    private void setCourseActivity() {
+    private void setCourseActivityPoints() {
         this.courseActivityMap.put("Java", 0L);
         this.courseActivityMap.put("DSA", 0L);
         this.courseActivityMap.put("Databases", 0L);
@@ -93,19 +81,27 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         return averageMap;
     }
 
-    private Map<String, Long> setCoursePopularity(long id, long[] arrayWithPoints) {
+    private void setCoursePopularity(long[] arrayWithPoints) {
         String[] namesArray = {"Java", "DSA", "Database", "Spring"};
-        int i = 0;
-        if (!setOfIDs.contains(id)) {
-            setOfIDs.add(id);
-            for (long array : arrayWithPoints) {
-                if (array > 0) coursePopularityPoints.put(namesArray[i],
+        if (!setOfIDs.contains(arrayWithPoints[0])) {
+            setOfIDs.add(arrayWithPoints[0]);
+            for (int i = 1; i < arrayWithPoints.length; i++) {
+                if (arrayWithPoints[i] > 0) coursePopularityPoints.put(namesArray[i - 1],
                         coursePopularityPoints
-                                .getOrDefault(namesArray[i], 0L) + 1);
+                                .getOrDefault(namesArray[i - 1], 0L) + 1);
             }
-            return coursePopularityPoints;
         }
-        return coursePopularityPoints;
+    }
+
+    private void setCourseActivityMap(long[] arrayWithPoints) {
+        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
+        for (int i = 1; i < arrayWithPoints.length; i++) {
+            if (arrayWithPoints[i] > 0) {
+                courseActivityMap.put(courseNames[i - 1],courseActivityMap
+                        .getOrDefault(courseNames[i - 1], 0L) + 1);
+            }
+            ++i;
+        }
     }
 
     private void printPopularityMethod() {
@@ -130,7 +126,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
                 String.join(", ", minKeys));
     }
 
-    private void printAverageCompletion(String name, Map<Long, Points> pointsMap) {
+    private void printRanking(String name, Map<Long, Points> pointsMap) {
         List<Map.Entry<Long, Map<String, Double>>> list = new ArrayList<>(averageMap.entrySet());
         list.sort((entry1, entry2) -> {
            Points points1 = pointsMap.get(entry1.getKey());
