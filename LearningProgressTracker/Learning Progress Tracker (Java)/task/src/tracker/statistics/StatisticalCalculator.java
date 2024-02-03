@@ -5,7 +5,7 @@ import tracker.Points;
 import java.util.*;
 
 public class StatisticalCalculator implements StatisticalAnalysis {
-    private Map<String, Long> coursePopularityPoints = new HashMap<>();
+
     Set<Long> setOfIDs = new HashSet<>();
     private static final double JAVA_POINTS_TO_COMPLETE = 600.0;
     private static final double DSA_POINTS_TO_COMPLETE = 400.0;
@@ -14,32 +14,68 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private Map<Long, Map<String, Double>> averageMap = new HashMap<>();
     private Map<String, Double> courseProgressMap = new HashMap<>();
     private Map<String, Long> courseActivityMap = new HashMap<>();
+    private Map<String, Long> coursePopularityPoints = new HashMap<>();
 
+    /*
+    *Constructor
+     */
     public StatisticalCalculator() {
         setCourseActivityPoints();
         setCoursePopularityPoints();
     }
 
+
+    /* public Method which use privet method to set the most and the least popular course
+    * which mean how many students start this course.
+    * */
+
     @Override
     public void coursePopularity(long[] arrayWithPoints) {
         setCoursePopularity(arrayWithPoints);
-
     }
 
+
+    /*public method which use privet method to set the highest and the lowest activity on the course
+    * which mean how many times students earn points during whole sessions*/
     @Override
     public void courseActivity(long[] arrayWithPoints) {
         setCourseActivityMap(arrayWithPoints);
     }
 
+
+    /*
+    * this public method use private method to set and check 3 things
+    *       first the students id
+    *       second counts all the points scored by the student
+    *       third it divides students points by one of the constant variables and then multiply it by 100. we get %
+    * */
     @Override
     public void StudentsRanking(long id, Map<Long, Points> pointsMap) {
         setAverageMap(id, pointsMap);
     }
 
+    /*
+    * this method prints ranking which is in the averageMap variable(this is a Map of Long and Map.
+    * this map looks like this -> Map<Long, Map<String, Double>
+    * It prints smth like this:
+    * Java
+    * id     points completed
+    * 125684 423    70.5%
+    * 200751 420    70.0%
+    * 130400 405    67.5%
+    * */
     public void printStudentRanking(String courseName, Map<Long, Points> pointsMap) {
         printRanking(courseName, pointsMap);
     }
 
+
+    /*
+    * I use this method to print only two lines:
+    * Most popular: 
+    * Least popular:
+    * the score is in the Map coursePopularityPoints
+    * the printer use Min and Max values to set the most and the least popular courses.
+     */
     public void printPopularity() {
         printPopularityMethod();
     }
@@ -60,6 +96,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private void setAverageMap(long id, Map<Long, Points> pointsMap) {
         Points studentPoints = pointsMap.get(id);
         Map<String, Double> studentCourseProgress = averageMap.getOrDefault(id, new HashMap<>());
+
         double currentJava = studentCourseProgress.getOrDefault("Java", 0.0)
                 + ((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Java", currentJava);
@@ -78,7 +115,6 @@ public class StatisticalCalculator implements StatisticalAnalysis {
 
         averageMap.put(id, studentCourseProgress);
 
-        return averageMap;
     }
 
     private void setCoursePopularity(long[] arrayWithPoints) {
