@@ -128,13 +128,17 @@ public class MainMenu {
                 try {
                     long id = checkId(splitDecision, addStudents);
                     long[] pointsArray = checkPoints(splitDecision);
+                    statisticalCalculator.coursePopularity(pointsArray);
+                    statisticalCalculator.courseActivity(pointsArray);
                     if (pointsMap.containsKey(id)) {
                         Points existingPoints = pointsMap.get(id);
                         existingPoints.setPoints(pointsArray);
+                        statisticalCalculator.studentsRanking(id, pointsMap);
                         System.out.println("Points updated.");
                     } else {
                         Points points = new Points(pointsArray);
                         pointsMap.put(id, points);
+                        statisticalCalculator.studentsRanking(id, pointsMap);
                         System.out.println("Points updated.");
                     }
                 } catch (ValidStudentId | ValidPointsCredentials e) {

@@ -17,8 +17,8 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private Map<String, Long> coursePopularityPoints = new HashMap<>();
 
     /*
-    *Constructor
-     */
+    * Constructor
+    **/
     public StatisticalCalculator() {
         setCourseActivityPoints();
         setCoursePopularityPoints();
@@ -35,8 +35,10 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
 
-    /*public method which use privet method to set the highest and the lowest activity on the course
-    * which mean how many times students earn points during whole sessions*/
+    /*
+    * public method which use privet method to set the highest and the lowest activity on the course
+    * which mean how many times students earn points during whole sessions
+    * */
     @Override
     public void courseActivity(long[] arrayWithPoints) {
         setCourseActivityMap(arrayWithPoints);
@@ -50,7 +52,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     *       third it divides students points by one of the constant variables and then multiply it by 100. we get %
     * */
     @Override
-    public void StudentsRanking(long id, Map<Long, Points> pointsMap) {
+    public void studentsRanking(long id, Map<Long, Points> pointsMap) {
         setAverageMap(id, pointsMap);
     }
 
@@ -71,15 +73,19 @@ public class StatisticalCalculator implements StatisticalAnalysis {
 
     /*
     * I use this method to print only two lines:
-    * Most popular: 
+    * Most popular:
     * Least popular:
     * the score is in the Map coursePopularityPoints
     * the printer use Min and Max values to set the most and the least popular courses.
-     */
+    * */
     public void printPopularity() {
         printPopularityMethod();
     }
 
+
+    /*
+    * this two methods below are responsible for setting the initial popularity and activity values
+    * */
     private void setCoursePopularityPoints() {
         this.coursePopularityPoints.put("Java", 0L);
         this.coursePopularityPoints.put("DSA", 0L);
@@ -92,6 +98,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         this.courseActivityMap.put("Databases", 0L);
         this.courseActivityMap.put("Spring", 0L);
     }
+
 
     private void setAverageMap(long id, Map<Long, Points> pointsMap) {
         Points studentPoints = pointsMap.get(id);

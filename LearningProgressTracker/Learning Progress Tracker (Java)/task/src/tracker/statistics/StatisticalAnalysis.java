@@ -14,7 +14,7 @@ public interface StatisticalAnalysis {
 
     void courseActivity(long[] arrayWithPoints);
 
-    void StudentsRanking(long id, Map<Long, Points> pointsMap);
+    void studentsRanking(long id, Map<Long, Points> pointsMap);
 
 
 }
