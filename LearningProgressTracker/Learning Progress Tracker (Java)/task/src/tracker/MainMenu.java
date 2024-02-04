@@ -34,6 +34,7 @@ public class MainMenu {
                 case "list" -> printList();
                 case "add points" -> printAddPoints();
                 case "find" -> printFind();
+                case "statistic" -> printStatisticMenu();
                 default -> System.out.println("Unknown command!");
             }
         }
@@ -164,6 +165,22 @@ public class MainMenu {
                 }
             }
         }
+    }
+
+    private void printStatisticMenu() {
+        System.out.println("Type the name of a course to see details or 'back' to quit");
+        while (true) {
+            String input = s.nextLine();
+            if (input.equals("back")) break;
+
+        }
+
+
+
+
+
+
+
     }
 }
 

@@ -174,13 +174,16 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         list.sort((entry1, entry2) -> {
            Points points1 = pointsMap.get(entry1.getKey());
            Points points2 = pointsMap.get(entry2.getKey());
-            return switch (name) {
+           int courseComparison = switch (name) {
                 case "Java" -> Long.compare(points2.getJava(), points1.getJava());
                 case "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
                 case "Databases" -> Long.compare(points2.getDatabases(), points1.getDatabases());
                 case "Spring" -> Long.compare(points2.getSpring(), points1.getSpring());
-                default -> throw new IllegalArgumentException("Invalid course name: " + name);
+                default -> throw new IllegalArgumentException("Unknown course");
             };
+            return (courseComparison == 0)
+                    ? Long.compare(entry1.getKey(), entry2.getKey())
+                    : courseComparison;
         });
         System.out.printf("%s%nid\tpoints\tcompleted%n", name);
 
