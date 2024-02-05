@@ -130,7 +130,7 @@ public class MainMenu {
                     long id = checkId(splitDecision, addStudents);
                     long[] pointsArray = checkPoints(splitDecision);
                     statisticalCalculator.coursePopularity(pointsArray);
-                    statisticalCalculator.courseActivity(pointsArray);
+                    statisticalCalculator.courseActivityAndDifficulty(pointsArray);
                     if (pointsMap.containsKey(id)) {
                         Points existingPoints = pointsMap.get(id);
                         existingPoints.setPoints(pointsArray);

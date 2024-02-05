@@ -82,6 +82,9 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     public void printPopularity() {
         printPopularityMethod();
     }
+    public void printDifficulty() {
+        printDifficultyMethod();
+    }
 
     /*
     * these three methods below are responsible for setting the initial value on the Map:
@@ -149,7 +152,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
             if (arrayWithPoints[i] > 0) {
                 courseActivityMap.put(courseNames[i - 1],courseActivityMap
                         .getOrDefault(courseNames[i - 1], 0L) + 1);
-                difficultyLevel.put(courseNames[i -1], difficultyLevel
+                difficultyLevel.put(courseNames[i - 1], difficultyLevel
                         .getOrDefault(courseNames[i - 1], 0L) + arrayWithPoints[i]);
             }
         }
@@ -175,6 +178,37 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         }
         System.out.printf("Most popular: %s%nLeast popular: %s", String.join(", ", maxKeys),
                 String.join(", ", minKeys));
+    }
+    private void printDifficultyMethod() {
+        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
+
+        double minValue = Double.MAX_VALUE;
+        double maxValue = Double.MIN_VALUE;
+        String minCourse = "n/a";
+        String maxCourse = "n/a";
+        
+        for (String courseName : courseNames) {
+            long totalPoints = difficultyLevel.getOrDefault(courseName, 0L);
+            long activityCount = courseActivityMap.getOrDefault(courseName, 0L);
+
+            // Avoid division by zero
+            if (activityCount != 0) {
+                double averageDifficulty = (double) totalPoints / activityCount;
+
+                if (averageDifficulty < minValue) {
+                    minValue = averageDifficulty;
+                    minCourse = courseName;
+                }
+                if (averageDifficulty > maxValue) {
+                    maxValue = averageDifficulty;
+                    maxCourse = courseName;
+                }
+            }
+        }
+
+        System.out.printf("Easiest course: %s%n", minCourse);
+        System.out.printf("Hardest course: %s%n", maxCourse);
+
     }
 
     private void printRanking(String name, Map<Long, Points> pointsMap) {
