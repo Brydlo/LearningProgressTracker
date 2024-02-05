@@ -12,7 +12,7 @@ public interface StatisticalAnalysis {
 
     void coursePopularity(long[] arrayWithPoint);
 
-    void courseActivity(long[] arrayWithPoints);
+    void courseActivityAndDifficulty(long[] arrayWithPoints);
 
     void studentsRanking(long id, Map<Long, Points> pointsMap);
 

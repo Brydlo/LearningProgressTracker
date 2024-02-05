@@ -12,9 +12,9 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     private static final double DB_POINTS_TO_COMPLETE = 480.0;
     private static final double SPRING_POINTS_TO_COMPLETE = 550.0;
     private Map<Long, Map<String, Double>> averageMap = new HashMap<>();
-    private Map<String, Double> courseProgressMap = new HashMap<>();
     private Map<String, Long> courseActivityMap = new HashMap<>();
     private Map<String, Long> coursePopularityPoints = new HashMap<>();
+    private Map<String, Long> difficultyLevel = new HashMap<>();
 
     /*
     * Constructor
@@ -22,6 +22,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     public StatisticalCalculator() {
         setCourseActivityPoints();
         setCoursePopularityPoints();
+        setStartForDifficulty();
     }
 
 
@@ -36,12 +37,12 @@ public class StatisticalCalculator implements StatisticalAnalysis {
 
 
     /*
-    * public method which use privet method to set the highest and the lowest activity on the course
-    * which mean how many times students earn points during whole sessions
+    * public method which use privet method to set the highest and the lowest activity in the course
+    * which means how many times students earn points during whole sessions
     * */
     @Override
-    public void courseActivity(long[] arrayWithPoints) {
-        setCourseActivityMap(arrayWithPoints);
+    public void courseActivityAndDifficulty(long[] arrayWithPoints) {
+        setCourseActivityAndDifficultyMap(arrayWithPoints);
     }
 
 
@@ -57,9 +58,9 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     /*
-    * this method prints ranking which is in the averageMap variable(this is a Map of Long and Map.
+    * this method prints ranking which is in the averageMap variable (this is a Map of Long and Map)
     * this map looks like this -> Map<Long, Map<String, Double>
-    * It prints smth like this:
+    * It prints something like this:
     * Java
     * id     points completed
     * 125684 423    70.5%
@@ -82,9 +83,9 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         printPopularityMethod();
     }
 
-
     /*
-    * this two methods below are responsible for setting the initial popularity and activity values
+    * these three methods below are responsible for setting the initial value on the Map:
+    * popularity, activity and difficulty
     * */
     private void setCoursePopularityPoints() {
         this.coursePopularityPoints.put("Java", 0L);
@@ -97,6 +98,12 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         this.courseActivityMap.put("DSA", 0L);
         this.courseActivityMap.put("Databases", 0L);
         this.courseActivityMap.put("Spring", 0L);
+    }
+    private void setStartForDifficulty() {
+        this.difficultyLevel.put("Java", 0L);
+        this.difficultyLevel.put("DSA", 0L);
+        this.difficultyLevel.put("Databases", 0L);
+        this.difficultyLevel.put("Spring", 0L);
     }
 
 
@@ -136,14 +143,15 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         }
     }
 
-    private void setCourseActivityMap(long[] arrayWithPoints) {
+    private void setCourseActivityAndDifficultyMap(long[] arrayWithPoints) {
         String[] courseNames = {"Java", "DSA", "Database", "Spring"};
         for (int i = 1; i < arrayWithPoints.length; i++) {
             if (arrayWithPoints[i] > 0) {
                 courseActivityMap.put(courseNames[i - 1],courseActivityMap
                         .getOrDefault(courseNames[i - 1], 0L) + 1);
+                difficultyLevel.put(courseNames[i -1], difficultyLevel
+                        .getOrDefault(courseNames[i - 1], 0L) + arrayWithPoints[i]);
             }
-            ++i;
         }
     }
 
