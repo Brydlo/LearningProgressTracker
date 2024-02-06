@@ -159,6 +159,10 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     private void printPopularityMethod() {
+        if (coursePopularityPoints.isEmpty()) {
+            System.out.printf("Most popular: n/a");
+            System.out.printf("Least popular: n/a");
+        }
         long minValue = Long.MAX_VALUE;
         long maxValue = Long.MIN_VALUE;
 
@@ -179,6 +183,35 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         System.out.printf("Most popular: %s%nLeast popular: %s", String.join(", ", maxKeys),
                 String.join(", ", minKeys));
     }
+
+
+    private void printActivity() {
+        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
+
+        long minValue = Integer.MAX_VALUE;
+        long maxValue = Integer.MIN_VALUE;
+        String minCourse = "n/a";
+        String maxCourse = "n/a";
+
+        if (courseActivityMap.isEmpty()) {
+            System.out.printf("Easiest course: %s%n", minCourse);
+            System.out.printf("Hardest course: %s%n", maxCourse);
+        } else {
+            for (String courseName : courseNames) {
+                if (courseActivityMap.get(courseName) < minValue) {
+                    minValue = courseActivityMap.get(courseName);
+                    minCourse = courseName;
+                }
+                if (courseActivityMap.get(courseName) > maxValue) {
+                    maxValue = courseActivityMap.get(courseName);
+                    maxCourse = courseName;
+                }
+            }
+            System.out.printf("Easiest course: %s%n", minCourse);
+            System.out.printf("Hardest course: %s%n", maxCourse);
+        }
+    }
+
     private void printDifficultyMethod() {
         String[] courseNames = {"Java", "DSA", "Database", "Spring"};
 
@@ -187,60 +220,69 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         String minCourse = "n/a";
         String maxCourse = "n/a";
 
-        for (String courseName : courseNames) {
-            long totalPoints = difficultyLevel.getOrDefault(courseName, 0L);
-            long activityCount = courseActivityMap.getOrDefault(courseName, 0L);
-?
-                double averageDifficulty = (double) totalPoints / activityCount;
+        if (difficultyLevel.isEmpty()) {
+            System.out.printf("Easiest course: %s%n", maxCourse);
+            System.out.printf("Hardest course: %s%n", minCourse);
+        } else {
+            for (String courseName : courseNames) {
+                long totalPoints = difficultyLevel.getOrDefault(courseName, 0L);
+                long activityCount = courseActivityMap.getOrDefault(courseName, 0L);
 
-                if (averageDifficulty < minValue) {
-                    minValue = averageDifficulty;
-                    minCourse = courseName;
-                }
-                if (averageDifficulty > maxValue) {
-                    maxValue = averageDifficulty;
-                    maxCourse = courseName;
+                if (activityCount != 0) {
+                    double averageDifficulty = (double) totalPoints / activityCount;
+
+                    if (averageDifficulty < minValue) {
+                        minValue = averageDifficulty;
+                        minCourse = courseName;
+                    }
+                    if (averageDifficulty > maxValue) {
+                        maxValue = averageDifficulty;
+                        maxCourse = courseName;
+                    }
                 }
             }
+            System.out.printf("Easiest course: %s%n", maxCourse);
+            System.out.printf("Hardest course: %s%n", minCourse);
         }
-
-        System.out.printf("Easiest course: %s%n", minCourse);
-        System.out.printf("Hardest course: %s%n", maxCourse);
-
     }
 
     private void printRanking(String name, Map<Long, Points> pointsMap) {
-        List<Map.Entry<Long, Map<String, Double>>> list = new ArrayList<>(averageMap.entrySet());
-        list.sort((entry1, entry2) -> {
-           Points points1 = pointsMap.get(entry1.getKey());
-           Points points2 = pointsMap.get(entry2.getKey());
-           int courseComparison = switch (name) {
-                case "Java" -> Long.compare(points2.getJava(), points1.getJava());
-                case "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
-                case "Databases" -> Long.compare(points2.getDatabases(), points1.getDatabases());
-                case "Spring" -> Long.compare(points2.getSpring(), points1.getSpring());
-                default -> throw new IllegalArgumentException("Unknown course");
-            };
-            return (courseComparison == 0)
-                    ? Long.compare(entry1.getKey(), entry2.getKey())
-                    : courseComparison;
-        });
-        System.out.printf("%s%nid\tpoints\tcompleted%n", name);
+        if (pointsMap.isEmpty()) {
+            System.out.printf("%s%nid\tpoints\tcompleted%n", name);
+        } else {
 
-        for (Map.Entry<Long, Map<String, Double>> entry : list) {
-            Long studentId = entry.getKey();
-            Points pointsFromMap = pointsMap.get(studentId);
-            Map<String, Double> courseProgress = entry.getValue();
-
-            if (courseProgress.containsKey(name)) {
-                long points = switch (name) {
-                    case "Java" -> pointsFromMap.getJava();
-                    case "DSA" -> pointsFromMap.getDSA();
-                    case "Databases" -> pointsFromMap.getDatabases();
-                    case "Spring" -> pointsFromMap.getSpring();
-                    default -> throw new IllegalArgumentException("Invalid course name: " + name);
+            List<Map.Entry<Long, Map<String, Double>>> list = new ArrayList<>(averageMap.entrySet());
+            list.sort((entry1, entry2) -> {
+                Points points1 = pointsMap.get(entry1.getKey());
+                Points points2 = pointsMap.get(entry2.getKey());
+                int courseComparison = switch (name) {
+                    case "Java" -> Long.compare(points2.getJava(), points1.getJava());
+                    case "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
+                    case "Databases" -> Long.compare(points2.getDatabases(), points1.getDatabases());
+                    case "Spring" -> Long.compare(points2.getSpring(), points1.getSpring());
+                    default -> throw new IllegalArgumentException("Unknown course");
                 };
-                System.out.printf("%d\t%d\t%.2f%%n", studentId, points, courseProgress.get(name));
+                return (courseComparison == 0)
+                        ? Long.compare(entry1.getKey(), entry2.getKey())
+                        : courseComparison;
+            });
+            System.out.printf("%s%nid\tpoints\tcompleted%n", name);
+
+            for (Map.Entry<Long, Map<String, Double>> entry : list) {
+                Long studentId = entry.getKey();
+                Points pointsFromMap = pointsMap.get(studentId);
+                Map<String, Double> courseProgress = entry.getValue();
+
+                if (courseProgress.containsKey(name)) {
+                    long points = switch (name) {
+                        case "Java" -> pointsFromMap.getJava();
+                        case "DSA" -> pointsFromMap.getDSA();
+                        case "Databases" -> pointsFromMap.getDatabases();
+                        case "Spring" -> pointsFromMap.getSpring();
+                        default -> throw new IllegalArgumentException("Invalid course name: " + name);
+                    };
+                    System.out.printf("%d\t%d\t%.2f%%n", studentId, points, courseProgress.get(name));
+                }
             }
         }
     }
