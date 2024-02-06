@@ -186,13 +186,11 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         double maxValue = Double.MIN_VALUE;
         String minCourse = "n/a";
         String maxCourse = "n/a";
-        
+
         for (String courseName : courseNames) {
             long totalPoints = difficultyLevel.getOrDefault(courseName, 0L);
             long activityCount = courseActivityMap.getOrDefault(courseName, 0L);
-
-            // Avoid division by zero
-            if (activityCount != 0) {
+?
                 double averageDifficulty = (double) totalPoints / activityCount;
 
                 if (averageDifficulty < minValue) {
