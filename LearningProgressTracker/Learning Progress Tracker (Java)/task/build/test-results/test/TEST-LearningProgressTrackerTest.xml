@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LearningProgressTrackerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-26T20:41:46" hostname="DESKTOP-24EGSBM" time="1.557">
+<testsuite name="LearningProgressTrackerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-02-07T10:32:27" hostname="DESKTOP-24EGSBM" time="1.181">
   <properties/>
-  <testcase name="start" classname="LearningProgressTrackerTest" time="1.557"/>
+  <testcase name="start" classname="LearningProgressTrackerTest" time="1.181">
+    <failure message="java.lang.AssertionError: Wrong answer in test #35&#10;&#10;Expected top activity: Java, DSA, Databases, Spring, but your output was: Highest activity: Java&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Learning Progress Tracker&#10;&gt; add students&#10;Enter student credentials or 'back' to return:&#10;&gt; Tasha Chem address1@mail.com&#10;The student has been added.&#10;&gt; Natka Herculie address2@mail.com&#10;The student has been added.&#10;&gt; Carmella Campman address3@mail.com&#10;The student has been added.&#10;&gt; Trixie Winer address4@mail.com&#10;The student has been added.&#10;&gt; back&#10;Total 4 students have been added.&#10;&gt; list&#10;Students:&#10;10000&#10;10001&#10;10002&#10;10003&#10;&gt; add points&#10;Enter an id and points or 'back' to return&#10;&gt; 10000 5 4 3 1&#10;Points updated.&#10;&gt; 10001 5 4 3 1&#10;Points updated.&#10;&gt; 10002 5 4 3 1&#10;Points updated.&#10;&gt; 10003 5 4 3 1&#10;Points updated.&#10;&gt; back&#10;&gt; statistics&#10;Type the name of a course to see details or 'back' to quit&#10;Most popular: Java, DSA, Databases, Spring&#10;Least popular: n/a&#10;Highest activity: Java&#10;Lowest activity: Java&#10;Easiest course: Java&#10;Hardest course: Spring" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #35
+
+Expected top activity: Java, DSA, Databases, Spring, but your output was: Highest activity: Java
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Learning Progress Tracker
+&gt; add students
+Enter student credentials or 'back' to return:
+&gt; Tasha Chem address1@mail.com
+The student has been added.
+&gt; Natka Herculie address2@mail.com
+The student has been added.
+&gt; Carmella Campman address3@mail.com
+The student has been added.
+&gt; Trixie Winer address4@mail.com
+The student has been added.
+&gt; back
+Total 4 students have been added.
+&gt; list
+Students:
+10000
+10001
+10002
+10003
+&gt; add points
+Enter an id and points or 'back' to return
+&gt; 10000 5 4 3 1
+Points updated.
+&gt; 10001 5 4 3 1
+Points updated.
+&gt; 10002 5 4 3 1
+Points updated.
+&gt; 10003 5 4 3 1
+Points updated.
+&gt; back
+&gt; statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: Java, DSA, Databases, Spring
+Least popular: n/a
+Highest activity: Java
+Lowest activity: Java
+Easiest course: Java
+Hardest course: Spring
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Learning Progress Tracker
@@ -81,6 +186,26 @@ Unknown command!
 ?[1;31m
 Start test 16?[0m
 Learning Progress Tracker
+> java
+Unknown command!
+?[1;31m
+Start test 17?[0m
+Learning Progress Tracker
+> spring
+Unknown command!
+?[1;31m
+Start test 18?[0m
+Learning Progress Tracker
+> dsa
+Unknown command!
+?[1;31m
+Start test 19?[0m
+Learning Progress Tracker
+> databases
+Unknown command!
+?[1;31m
+Start test 20?[0m
+Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
 > exit
@@ -91,7 +216,7 @@ Total 0 students have been added.
 Enter 'exit' to exit the program.
 > exit
 ?[1;31m
-Start test 17?[0m
+Start test 21?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
@@ -118,7 +243,7 @@ The student has been added.
 > back
 Total 10 students have been added.
 ?[1;31m
-Start test 18?[0m
+Start test 22?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
@@ -177,7 +302,7 @@ Incorrect email.
 > back
 Total 0 students have been added.
 ?[1;31m
-Start test 19?[0m
+Start test 23?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
@@ -186,88 +311,88 @@ Total 0 students have been added.
 > list
 No students found
 ?[1;31m
-Start test 20?[0m
+Start test 24?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
-> Dalia Gleeson address1@mail.com
+> Charlena Girardo address1@mail.com
 The student has been added.
-> Dalia Gleeson address1@mail.com
+> Charlena Girardo address1@mail.com
 This email is already taken.
-> Roxi Hett address2@mail.com
+> Jermaine Naaman address2@mail.com
 The student has been added.
-> Roxi Hett address2@mail.com
+> Jermaine Naaman address2@mail.com
 This email is already taken.
-> Beatrisa Jegar address3@mail.com
+> Roxi Hett address3@mail.com
 The student has been added.
-> Beatrisa Jegar address3@mail.com
+> Roxi Hett address3@mail.com
 This email is already taken.
-> Ann Agnella address4@mail.com
+> Olga Rosanne address4@mail.com
 The student has been added.
-> Ann Agnella address4@mail.com
+> Olga Rosanne address4@mail.com
 This email is already taken.
-> Olga Rosanne address5@mail.com
+> Dolley Panther address5@mail.com
 The student has been added.
-> Olga Rosanne address5@mail.com
+> Dolley Panther address5@mail.com
 This email is already taken.
-> Nonna Miko address6@mail.com
+> Barbara-Anne Chicky address6@mail.com
 The student has been added.
-> Nonna Miko address6@mail.com
+> Barbara-Anne Chicky address6@mail.com
 This email is already taken.
-> Starlin Griz address7@mail.com
+> Van Fawnia address7@mail.com
 The student has been added.
-> Starlin Griz address7@mail.com
+> Van Fawnia address7@mail.com
 This email is already taken.
-> Trixie Winer address8@mail.com
+> Alexina Belcher address8@mail.com
 The student has been added.
-> Trixie Winer address8@mail.com
+> Alexina Belcher address8@mail.com
 This email is already taken.
-> Leola Whelan address9@mail.com
+> Natka Herculie address9@mail.com
 The student has been added.
-> Leola Whelan address9@mail.com
+> Natka Herculie address9@mail.com
 This email is already taken.
-> Emelia Annnora address10@mail.com
+> Nonna Miko address10@mail.com
 The student has been added.
-> Emelia Annnora address10@mail.com
+> Nonna Miko address10@mail.com
 This email is already taken.
-> Annecorinne Ause address11@mail.com
+> Shoshana Utica address11@mail.com
 The student has been added.
-> Annecorinne Ause address11@mail.com
+> Shoshana Utica address11@mail.com
 This email is already taken.
-> Gwenette Anagnos address12@mail.com
+> Ricki Trovillion address12@mail.com
 The student has been added.
-> Gwenette Anagnos address12@mail.com
+> Ricki Trovillion address12@mail.com
 This email is already taken.
 > back
 Total 12 students have been added.
 ?[1;31m
-Start test 21?[0m
+Start test 25?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
-> Nonna Miko address1@mail.com
+> Gwenette Kironde address1@mail.com
 The student has been added.
-> Aurie Dorisa address2@mail.com
+> Leola Whelan address2@mail.com
 The student has been added.
-> Gwenette Kironde address3@mail.com
+> Tasha Chem address3@mail.com
 The student has been added.
-> Charlena Girardo address4@mail.com
+> Dalia Gleeson address4@mail.com
 The student has been added.
-> Ann Agnella address5@mail.com
+> Francesca Francis address5@mail.com
 The student has been added.
-> Van Fawnia address6@mail.com
+> Shoshana Utica address6@mail.com
 The student has been added.
-> Marisa Firman address7@mail.com
+> Hedwig Wally address7@mail.com
 The student has been added.
-> Francesca Francis address8@mail.com
+> Nonna Miko address8@mail.com
 The student has been added.
-> Ricki Trovillion address9@mail.com
+> Natka Herculie address9@mail.com
 The student has been added.
-> Carmella Campman address10@mail.com
+> Van Fawnia address10@mail.com
 The student has been added.
-> Shoshana Utica address11@mail.com
+> Starlin Griz address11@mail.com
 The student has been added.
-> Toby Bleier address12@mail.com
+> Carmella Campman address12@mail.com
 The student has been added.
 > back
 Total 12 students have been added.
@@ -286,7 +411,7 @@ Students:
 10010
 10011
 ?[1;31m
-Start test 22?[0m
+Start test 26?[0m
 Learning Progress Tracker
 > add points
 Enter an id and points or 'back' to return
@@ -295,21 +420,21 @@ Enter an id and points or 'back' to return
 Enter 'exit' to exit the program.
 > exit
 ?[1;31m
-Start test 23?[0m
+Start test 27?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
-> Emelia Annnora address1@mail.com
+> Ann Agnella address1@mail.com
 The student has been added.
-> Roxi Hett address2@mail.com
+> Nonna Miko address2@mail.com
 The student has been added.
-> Francesca Francis address3@mail.com
+> Toby Bleier address3@mail.com
 The student has been added.
-> Nonna Miko address4@mail.com
+> Dolley Panther address4@mail.com
 The student has been added.
-> Jermaine Naaman address5@mail.com
+> Shoshana Utica address5@mail.com
 The student has been added.
-> Ricki Trovillion address6@mail.com
+> Jermaine Naaman address6@mail.com
 The student has been added.
 > back
 Total 6 students have been added.
@@ -336,21 +461,21 @@ Incorrect points format.
 > imsurethereisnosuchstudentid 1 1 1 1
 No student is found for id=imsurethereisnosuchstudentid
 ?[1;31m
-Start test 24?[0m
+Start test 28?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
-> Tasha Chem address1@mail.com
+> Starlin Griz address1@mail.com
 The student has been added.
-> Leola Whelan address2@mail.com
+> Tasha Chem address2@mail.com
 The student has been added.
-> Dalia Gleeson address3@mail.com
+> Annecorinne Ause address3@mail.com
 The student has been added.
-> Lebbie Alabaster address4@mail.com
+> Hedwig Wally address4@mail.com
 The student has been added.
-> Hedwig Wally address5@mail.com
+> Francesca Francis address5@mail.com
 The student has been added.
-> Barbara-Anne Chicky address6@mail.com
+> Brandise Hardan address6@mail.com
 The student has been added.
 > back
 Total 6 students have been added.
@@ -364,20 +489,20 @@ Students:
 10005
 > add points
 Enter an id and points or 'back' to return
-> 10000 6 2 3 2
+> 10000 8 2 7 6
 Points updated.
-> 10001 1 7 5 3
+> 10001 8 7 4 8
 Points updated.
-> 10002 9 6 6 9
+> 10002 3 1 9 5
 Points updated.
-> 10003 7 8 6 9
+> 10003 2 8 10 8
 Points updated.
-> 10004 7 6 1 5
+> 10004 7 9 1 4
 Points updated.
-> 10005 6 4 2 5
+> 10005 6 10 3 7
 Points updated.
 ?[1;31m
-Start test 25?[0m
+Start test 29?[0m
 Learning Progress Tracker
 > find
 Enter an id or 'back' to return:
@@ -386,19 +511,19 @@ Enter an id or 'back' to return:
 Enter 'exit' to exit the program.
 > exit
 ?[1;31m
-Start test 26?[0m
+Start test 30?[0m
 Learning Progress Tracker
 > add students
 Enter student credentials or 'back' to return:
-> Roxi Hett address1@mail.com
+> Marisa Firman address1@mail.com
 The student has been added.
-> Karee Antoinetta address2@mail.com
+> Van Fawnia address2@mail.com
 The student has been added.
-> Trixie Winer address3@mail.com
+> Beatrisa Jegar address3@mail.com
 The student has been added.
-> Ricki Trovillion address4@mail.com
+> Dolley Panther address4@mail.com
 The student has been added.
-> Ann Agnella address5@mail.com
+> Elysha Quinlan address5@mail.com
 The student has been added.
 > back
 Total 5 students have been added.
@@ -444,6 +569,130 @@ Enter an id or 'back' to return:
 10003 points: Java: 6; DSA: 6; Databases: 6; Spring: 6
 > 10004
 10004 points: Java: 8; DSA: 8; Databases: 8; Spring: 8
+?[1;31m
+Start test 31?[0m
+Learning Progress Tracker
+> statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> back
+> back
+Enter 'exit' to exit the program.
+> exit
+?[1;31m
+Start test 32?[0m
+Learning Progress Tracker
+> statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+?[1;31m
+Start test 33?[0m
+Learning Progress Tracker
+> statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> Java
+Java
+id	points	completed
+> DSA
+DSA
+id	points	completed
+> Databases
+Databases
+id	points	completed
+> Spring
+Spring
+id	points	completed
+> abc
+Unknown course.
+> quit
+Unknown course.
+>   brexit 
+Unknown course.
+> exi  t
+Unknown course.
+> ?
+Unknown course.
+> break
+Unknown course.
+> -exit
+Unknown course.
+> Ctrl+C
+Unknown course.
+> exit please
+Unknown course.
+> :q
+Unknown course.
+?[1;31m
+Start test 34?[0m
+Learning Progress Tracker
+> statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> back
+> back
+Enter 'exit' to exit the program.
+> exit
+?[1;31m
+Start test 35?[0m
+Learning Progress Tracker
+> add students
+Enter student credentials or 'back' to return:
+> Tasha Chem address1@mail.com
+The student has been added.
+> Natka Herculie address2@mail.com
+The student has been added.
+> Carmella Campman address3@mail.com
+The student has been added.
+> Trixie Winer address4@mail.com
+The student has been added.
+> back
+Total 4 students have been added.
+> list
+Students:
+10000
+10001
+10002
+10003
+> add points
+Enter an id and points or 'back' to return
+> 10000 5 4 3 1
+Points updated.
+> 10001 5 4 3 1
+Points updated.
+> 10002 5 4 3 1
+Points updated.
+> 10003 5 4 3 1
+Points updated.
+> back
+> statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: Java, DSA, Databases, Spring
+Least popular: n/a
+Highest activity: Java
+Lowest activity: Java
+Easiest course: Java
+Hardest course: Spring
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

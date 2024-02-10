@@ -77,6 +77,26 @@
 [1;31m
 Start test 16[0m
 Learning Progress Tracker
+> java
+Unknown command!
+[1;31m
+Start test 17[0m
+Learning Progress Tracker
+	> spring
+Unknown command!
+[1;31m
+Start test 18[0m
+Learning Progress Tracker
+> dsa
+Unknown command!
+[1;31m
+Start test 19[0m
+Learning Progress Tracker
+> databases
+Unknown command!
+[1;31m
+Start test 20[0m
+Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
 > exit
@@ -87,7 +107,7 @@
 #Enter 'exit' to exit the program.
 > exit
 [1;31m
-Start test 17[0m
+Start test 21[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
@@ -114,7 +134,7 @@
 > back
 $Total 10 students have been added.
 [1;31m
-Start test 18[0m
+Start test 22[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
@@ -173,7 +193,7 @@
 > back
 #Total 0 students have been added.
 [1;31m
-Start test 19[0m
+Start test 23[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
@@ -182,88 +202,88 @@
 > list
 No students found
 [1;31m
-Start test 20[0m
+Start test 24[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
-"> Dalia Gleeson address1@mail.com
+%> Charlena Girardo address1@mail.com
 The student has been added.
-"> Dalia Gleeson address1@mail.com
+%> Charlena Girardo address1@mail.com
 This email is already taken.
-> Roxi Hett address2@mail.com
+$> Jermaine Naaman address2@mail.com
 The student has been added.
-> Roxi Hett address2@mail.com
+$> Jermaine Naaman address2@mail.com
 This email is already taken.
-#> Beatrisa Jegar address3@mail.com
+> Roxi Hett address3@mail.com
 The student has been added.
-#> Beatrisa Jegar address3@mail.com
+> Roxi Hett address3@mail.com
 This email is already taken.
- > Ann Agnella address4@mail.com
+!> Olga Rosanne address4@mail.com
 The student has been added.
- > Ann Agnella address4@mail.com
+!> Olga Rosanne address4@mail.com
 This email is already taken.
-!> Olga Rosanne address5@mail.com
+#> Dolley Panther address5@mail.com
 The student has been added.
-!> Olga Rosanne address5@mail.com
+#> Dolley Panther address5@mail.com
 This email is already taken.
-> Nonna Miko address6@mail.com
+(> Barbara-Anne Chicky address6@mail.com
 The student has been added.
-> Nonna Miko address6@mail.com
+(> Barbara-Anne Chicky address6@mail.com
 This email is already taken.
-!> Starlin Griz address7@mail.com
+> Van Fawnia address7@mail.com
 The student has been added.
-!> Starlin Griz address7@mail.com
+> Van Fawnia address7@mail.com
 This email is already taken.
-!> Trixie Winer address8@mail.com
+$> Alexina Belcher address8@mail.com
 The student has been added.
-!> Trixie Winer address8@mail.com
+$> Alexina Belcher address8@mail.com
 This email is already taken.
-!> Leola Whelan address9@mail.com
+#> Natka Herculie address9@mail.com
 The student has been added.
-!> Leola Whelan address9@mail.com
+#> Natka Herculie address9@mail.com
 This email is already taken.
-$> Emelia Annnora address10@mail.com
+ > Nonna Miko address10@mail.com
 The student has been added.
-$> Emelia Annnora address10@mail.com
+ > Nonna Miko address10@mail.com
 This email is already taken.
-&> Annecorinne Ause address11@mail.com
+$> Shoshana Utica address11@mail.com
 The student has been added.
-&> Annecorinne Ause address11@mail.com
+$> Shoshana Utica address11@mail.com
 This email is already taken.
-&> Gwenette Anagnos address12@mail.com
+&> Ricki Trovillion address12@mail.com
 The student has been added.
-&> Gwenette Anagnos address12@mail.com
+&> Ricki Trovillion address12@mail.com
 This email is already taken.
 > back
 $Total 12 students have been added.
 [1;31m
-Start test 21[0m
+Start test 25[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
-> Nonna Miko address1@mail.com
+%> Gwenette Kironde address1@mail.com
 The student has been added.
-!> Aurie Dorisa address2@mail.com
+!> Leola Whelan address2@mail.com
 The student has been added.
-%> Gwenette Kironde address3@mail.com
+> Tasha Chem address3@mail.com
 The student has been added.
-%> Charlena Girardo address4@mail.com
+"> Dalia Gleeson address4@mail.com
 The student has been added.
- > Ann Agnella address5@mail.com
+&> Francesca Francis address5@mail.com
 The student has been added.
-> Van Fawnia address6@mail.com
+#> Shoshana Utica address6@mail.com
 The student has been added.
-"> Marisa Firman address7@mail.com
+!> Hedwig Wally address7@mail.com
 The student has been added.
-&> Francesca Francis address8@mail.com
+> Nonna Miko address8@mail.com
 The student has been added.
-%> Ricki Trovillion address9@mail.com
+#> Natka Herculie address9@mail.com
 The student has been added.
-&> Carmella Campman address10@mail.com
+ > Van Fawnia address10@mail.com
 The student has been added.
-$> Shoshana Utica address11@mail.com
+"> Starlin Griz address11@mail.com
 The student has been added.
-!> Toby Bleier address12@mail.com
+&> Carmella Campman address12@mail.com
 The student has been added.
 > back
 $Total 12 students have been added.
@@ -282,7 +302,7 @@
 10010
 10011
 [1;31m
-Start test 22[0m
+Start test 26[0m
 Learning Progress Tracker
 > add points
 ,Enter an id and points or 'back' to return
@@ -291,21 +311,21 @@
 #Enter 'exit' to exit the program.
 > exit
 [1;31m
-Start test 23[0m
+Start test 27[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
-#> Emelia Annnora address1@mail.com
+ > Ann Agnella address1@mail.com
 The student has been added.
-> Roxi Hett address2@mail.com
+> Nonna Miko address2@mail.com
 The student has been added.
-&> Francesca Francis address3@mail.com
+ > Toby Bleier address3@mail.com
 The student has been added.
-> Nonna Miko address4@mail.com
+#> Dolley Panther address4@mail.com
 The student has been added.
-$> Jermaine Naaman address5@mail.com
+#> Shoshana Utica address5@mail.com
 The student has been added.
-%> Ricki Trovillion address6@mail.com
+$> Jermaine Naaman address6@mail.com
 The student has been added.
 > back
 #Total 6 students have been added.
@@ -332,21 +352,21 @@
 '> imsurethereisnosuchstudentid 1 1 1 1
 9No student is found for id=imsurethereisnosuchstudentid
 [1;31m
-Start test 24[0m
+Start test 28[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
-> Tasha Chem address1@mail.com
+!> Starlin Griz address1@mail.com
 The student has been added.
-!> Leola Whelan address2@mail.com
+> Tasha Chem address2@mail.com
 The student has been added.
-"> Dalia Gleeson address3@mail.com
+%> Annecorinne Ause address3@mail.com
 The student has been added.
-%> Lebbie Alabaster address4@mail.com
+!> Hedwig Wally address4@mail.com
 The student has been added.
-!> Hedwig Wally address5@mail.com
+&> Francesca Francis address5@mail.com
 The student has been added.
-(> Barbara-Anne Chicky address6@mail.com
+$> Brandise Hardan address6@mail.com
 The student has been added.
 > back
 #Total 6 students have been added.
@@ -360,20 +380,20 @@
 10005
 > add points
 ,Enter an id and points or 'back' to return
-> 10000 6 2 3 2
+> 10000 8 2 7 6
 Points updated.
-> 10001 1 7 5 3
+> 10001 8 7 4 8
 Points updated.
-> 10002 9 6 6 9
+> 10002 3 1 9 5
 Points updated.
-> 10003 7 8 6 9
+> 10003 2 8 10 8
 Points updated.
-> 10004 7 6 1 5
+> 10004 7 9 1 4
 Points updated.
-> 10005 6 4 2 5
+> 10005 6 10 3 7
 Points updated.
 [1;31m
-Start test 25[0m
+Start test 29[0m
 Learning Progress Tracker
 > find
 "Enter an id or 'back' to return:
@@ -382,19 +402,19 @@
 #Enter 'exit' to exit the program.
 > exit
 [1;31m
-Start test 26[0m
+Start test 30[0m
 Learning Progress Tracker
 > add students
 0Enter student credentials or 'back' to return:
-> Roxi Hett address1@mail.com
+"> Marisa Firman address1@mail.com
 The student has been added.
-%> Karee Antoinetta address2@mail.com
+> Van Fawnia address2@mail.com
 The student has been added.
-!> Trixie Winer address3@mail.com
+#> Beatrisa Jegar address3@mail.com
 The student has been added.
-%> Ricki Trovillion address4@mail.com
+#> Dolley Panther address4@mail.com
 The student has been added.
- > Ann Agnella address5@mail.com
+#> Elysha Quinlan address5@mail.com
 The student has been added.
 > back
 #Total 5 students have been added.
@@ -440,3 +460,127 @@
 810003 points: Java: 6; DSA: 6; Databases: 6; Spring: 6
 > 10004
 810004 points: Java: 8; DSA: 8; Databases: 8; Spring: 8
+[1;31m
+Start test 31[0m
+Learning Progress Tracker
+> statistics
+<Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> back
+> back
+#Enter 'exit' to exit the program.
+> exit
+[1;31m
+Start test 32[0m
+Learning Progress Tracker
+> statistics
+<Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+[1;31m
+Start test 33[0m
+Learning Progress Tracker
+> statistics
+<Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> Java
+Java
+id	points	completed
+> DSA
+DSA
+id	points	completed
+> Databases
+Databases
+id	points	completed
+	> Spring
+Spring
+id	points	completed
+> abc
+Unknown course.
+> quit
+Unknown course.
+>   brexit 
+Unknown course.
+	> exi  t
+Unknown course.
+> ?
+Unknown course.
+> break
+Unknown course.
+> -exit
+Unknown course.
+	> Ctrl+C
+Unknown course.
+> exit please
+Unknown course.
+> :q
+Unknown course.
+[1;31m
+Start test 34[0m
+Learning Progress Tracker
+> statistics
+<Type the name of a course to see details or 'back' to quit
+Most popular: n/a
+Least popular: n/a
+Highest activity: n/a
+Lowest activity: n/a
+Easiest course: n/a
+Hardest course: n/a
+> back
+> back
+#Enter 'exit' to exit the program.
+> exit
+[1;31m
+Start test 35[0m
+Learning Progress Tracker
+> add students
+0Enter student credentials or 'back' to return:
+> Tasha Chem address1@mail.com
+The student has been added.
+#> Natka Herculie address2@mail.com
+The student has been added.
+%> Carmella Campman address3@mail.com
+The student has been added.
+!> Trixie Winer address4@mail.com
+The student has been added.
+> back
+#Total 4 students have been added.
+> list
+Students:
+10000
+10001
+10002
+10003
+> add points
+,Enter an id and points or 'back' to return
+> 10000 5 4 3 1
+Points updated.
+> 10001 5 4 3 1
+Points updated.
+> 10002 5 4 3 1
+Points updated.
+> 10003 5 4 3 1
+Points updated.
+> back
+> statistics
+<Type the name of a course to see details or 'back' to quit
+,Most popular: Java, DSA, Databases, Spring
+Least popular: n/a
+Highest activity: Java
+Lowest activity: Java
+Easiest course: Java
+Hardest course: Spring

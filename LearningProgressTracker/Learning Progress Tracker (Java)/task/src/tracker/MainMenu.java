@@ -34,7 +34,7 @@ public class MainMenu {
                 case "list" -> printList();
                 case "add points" -> printAddPoints();
                 case "find" -> printFind();
-                case "statistic" -> printStatisticMenu();
+                case "statistics" -> printStatisticMenu();
                 default -> System.out.println("Unknown command!");
             }
         }
@@ -169,18 +169,18 @@ public class MainMenu {
 
     private void printStatisticMenu() {
         System.out.println("Type the name of a course to see details or 'back' to quit");
+        statisticalCalculator.printWholeText();
         while (true) {
             String input = s.nextLine();
             if (input.equals("back")) break;
-
+            switch (input) {
+                case "Java", "java", "JAVA" -> statisticalCalculator.printStudentRanking("Java", pointsMap);
+                case "Dsa", "dsa", "DSA" -> statisticalCalculator.printStudentRanking("DSA", pointsMap);
+                case "Databases", "DATABASES", "databases" -> statisticalCalculator.printStudentRanking("Databases", pointsMap);
+                case "Spring","SPRING", "spring" -> statisticalCalculator.printStudentRanking("Spring", pointsMap);
+                default -> System.out.println("Unknown course.");
+            }
         }
-
-
-
-
-
-
-
     }
 }
 
