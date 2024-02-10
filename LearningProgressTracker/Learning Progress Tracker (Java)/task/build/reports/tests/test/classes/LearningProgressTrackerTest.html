@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.181s</div>
+<div class="counter">1.244s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,129 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="start"></a>
-<h3 class="failures">start</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Wrong answer in test #35
-
-Expected top activity: Java, DSA, Databases, Spring, but your output was: Highest activity: Java
-
-Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
-
----
-
-Learning Progress Tracker
-&gt; add students
-Enter student credentials or 'back' to return:
-&gt; Tasha Chem address1@mail.com
-The student has been added.
-&gt; Natka Herculie address2@mail.com
-The student has been added.
-&gt; Carmella Campman address3@mail.com
-The student has been added.
-&gt; Trixie Winer address4@mail.com
-The student has been added.
-&gt; back
-Total 4 students have been added.
-&gt; list
-Students:
-10000
-10001
-10002
-10003
-&gt; add points
-Enter an id and points or 'back' to return
-&gt; 10000 5 4 3 1
-Points updated.
-&gt; 10001 5 4 3 1
-Points updated.
-&gt; 10002 5 4 3 1
-Points updated.
-&gt; 10003 5 4 3 1
-Points updated.
-&gt; back
-&gt; statistics
-Type the name of a course to see details or 'back' to quit
-Most popular: Java, DSA, Databases, Spring
-Least popular: n/a
-Highest activity: Java
-Lowest activity: Java
-Easiest course: Java
-Hardest course: Spring
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -194,13 +78,13 @@ Hardest course: Spring
 </tr>
 </thead>
 <tr>
-<td class="failures">start</td>
-<td class="failures">1.181s</td>
-<td class="failures">failed</td>
+<td class="success">start</td>
+<td class="success">1.244s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
@@ -415,49 +299,49 @@ Enter student credentials or 'back' to return:
 The student has been added.
 &gt; Charlena Girardo address1@mail.com
 This email is already taken.
-&gt; Jermaine Naaman address2@mail.com
+&gt; Olga Rosanne address2@mail.com
 The student has been added.
-&gt; Jermaine Naaman address2@mail.com
+&gt; Olga Rosanne address2@mail.com
 This email is already taken.
-&gt; Roxi Hett address3@mail.com
+&gt; Aurie Dorisa address3@mail.com
 The student has been added.
-&gt; Roxi Hett address3@mail.com
+&gt; Aurie Dorisa address3@mail.com
 This email is already taken.
-&gt; Olga Rosanne address4@mail.com
+&gt; Tasha Chem address4@mail.com
 The student has been added.
-&gt; Olga Rosanne address4@mail.com
+&gt; Tasha Chem address4@mail.com
 This email is already taken.
-&gt; Dolley Panther address5@mail.com
+&gt; Toby Bleier address5@mail.com
 The student has been added.
-&gt; Dolley Panther address5@mail.com
+&gt; Toby Bleier address5@mail.com
 This email is already taken.
-&gt; Barbara-Anne Chicky address6@mail.com
+&gt; Elysha Quinlan address6@mail.com
 The student has been added.
-&gt; Barbara-Anne Chicky address6@mail.com
+&gt; Elysha Quinlan address6@mail.com
 This email is already taken.
-&gt; Van Fawnia address7@mail.com
+&gt; Jermaine Naaman address7@mail.com
 The student has been added.
-&gt; Van Fawnia address7@mail.com
+&gt; Jermaine Naaman address7@mail.com
 This email is already taken.
-&gt; Alexina Belcher address8@mail.com
+&gt; Dalia Gleeson address8@mail.com
 The student has been added.
-&gt; Alexina Belcher address8@mail.com
+&gt; Dalia Gleeson address8@mail.com
 This email is already taken.
-&gt; Natka Herculie address9@mail.com
+&gt; Shoshana Utica address9@mail.com
 The student has been added.
-&gt; Natka Herculie address9@mail.com
+&gt; Shoshana Utica address9@mail.com
 This email is already taken.
-&gt; Nonna Miko address10@mail.com
+&gt; Gwenette Anagnos address10@mail.com
 The student has been added.
-&gt; Nonna Miko address10@mail.com
+&gt; Gwenette Anagnos address10@mail.com
 This email is already taken.
-&gt; Shoshana Utica address11@mail.com
+&gt; Starlin Griz address11@mail.com
 The student has been added.
-&gt; Shoshana Utica address11@mail.com
+&gt; Starlin Griz address11@mail.com
 This email is already taken.
-&gt; Ricki Trovillion address12@mail.com
+&gt; Emelia Annnora address12@mail.com
 The student has been added.
-&gt; Ricki Trovillion address12@mail.com
+&gt; Emelia Annnora address12@mail.com
 This email is already taken.
 &gt; back
 Total 12 students have been added.
@@ -466,29 +350,29 @@ Start test 25?[0m
 Learning Progress Tracker
 &gt; add students
 Enter student credentials or 'back' to return:
-&gt; Gwenette Kironde address1@mail.com
+&gt; Leola Whelan address1@mail.com
 The student has been added.
-&gt; Leola Whelan address2@mail.com
+&gt; Starlin Griz address2@mail.com
 The student has been added.
-&gt; Tasha Chem address3@mail.com
+&gt; Marisa Firman address3@mail.com
 The student has been added.
-&gt; Dalia Gleeson address4@mail.com
+&gt; Van Fawnia address4@mail.com
 The student has been added.
-&gt; Francesca Francis address5@mail.com
+&gt; Barbara-Anne Chicky address5@mail.com
 The student has been added.
-&gt; Shoshana Utica address6@mail.com
+&gt; Roxi Hett address6@mail.com
 The student has been added.
-&gt; Hedwig Wally address7@mail.com
+&gt; Gwenette Anagnos address7@mail.com
 The student has been added.
-&gt; Nonna Miko address8@mail.com
+&gt; Gwenette Kironde address8@mail.com
 The student has been added.
-&gt; Natka Herculie address9@mail.com
+&gt; Hedwig Wally address9@mail.com
 The student has been added.
-&gt; Van Fawnia address10@mail.com
+&gt; Jermaine Naaman address10@mail.com
 The student has been added.
-&gt; Starlin Griz address11@mail.com
+&gt; Brandise Hardan address11@mail.com
 The student has been added.
-&gt; Carmella Campman address12@mail.com
+&gt; Trixie Winer address12@mail.com
 The student has been added.
 &gt; back
 Total 12 students have been added.
@@ -520,17 +404,17 @@ Start test 27?[0m
 Learning Progress Tracker
 &gt; add students
 Enter student credentials or 'back' to return:
-&gt; Ann Agnella address1@mail.com
+&gt; Dolley Panther address1@mail.com
 The student has been added.
-&gt; Nonna Miko address2@mail.com
+&gt; Leola Whelan address2@mail.com
 The student has been added.
-&gt; Toby Bleier address3@mail.com
+&gt; Annecorinne Ause address3@mail.com
 The student has been added.
-&gt; Dolley Panther address4@mail.com
+&gt; Aurie Dorisa address4@mail.com
 The student has been added.
-&gt; Shoshana Utica address5@mail.com
+&gt; Olga Rosanne address5@mail.com
 The student has been added.
-&gt; Jermaine Naaman address6@mail.com
+&gt; Marisa Firman address6@mail.com
 The student has been added.
 &gt; back
 Total 6 students have been added.
@@ -561,17 +445,17 @@ Start test 28?[0m
 Learning Progress Tracker
 &gt; add students
 Enter student credentials or 'back' to return:
-&gt; Starlin Griz address1@mail.com
+&gt; Tasha Chem address1@mail.com
 The student has been added.
-&gt; Tasha Chem address2@mail.com
+&gt; Van Fawnia address2@mail.com
 The student has been added.
-&gt; Annecorinne Ause address3@mail.com
+&gt; Marisa Firman address3@mail.com
 The student has been added.
-&gt; Hedwig Wally address4@mail.com
+&gt; Shoshana Utica address4@mail.com
 The student has been added.
-&gt; Francesca Francis address5@mail.com
+&gt; Karee Antoinetta address5@mail.com
 The student has been added.
-&gt; Brandise Hardan address6@mail.com
+&gt; Ann Agnella address6@mail.com
 The student has been added.
 &gt; back
 Total 6 students have been added.
@@ -585,17 +469,17 @@ Students:
 10005
 &gt; add points
 Enter an id and points or 'back' to return
-&gt; 10000 8 2 7 6
+&gt; 10000 10 6 4 10
 Points updated.
-&gt; 10001 8 7 4 8
+&gt; 10001 9 5 10 2
 Points updated.
-&gt; 10002 3 1 9 5
+&gt; 10002 9 3 1 1
 Points updated.
-&gt; 10003 2 8 10 8
+&gt; 10003 3 1 2 4
 Points updated.
-&gt; 10004 7 9 1 4
+&gt; 10004 5 3 3 3
 Points updated.
-&gt; 10005 6 10 3 7
+&gt; 10005 2 1 10 3
 Points updated.
 ?[1;31m
 Start test 29?[0m
@@ -611,15 +495,15 @@ Start test 30?[0m
 Learning Progress Tracker
 &gt; add students
 Enter student credentials or 'back' to return:
-&gt; Marisa Firman address1@mail.com
+&gt; Natka Herculie address1@mail.com
 The student has been added.
-&gt; Van Fawnia address2@mail.com
+&gt; Nonna Miko address2@mail.com
 The student has been added.
-&gt; Beatrisa Jegar address3@mail.com
+&gt; Van Fawnia address3@mail.com
 The student has been added.
-&gt; Dolley Panther address4@mail.com
+&gt; Dalia Gleeson address4@mail.com
 The student has been added.
-&gt; Elysha Quinlan address5@mail.com
+&gt; Anjanette Uis address5@mail.com
 The student has been added.
 &gt; back
 Total 5 students have been added.
@@ -754,13 +638,13 @@ Start test 35?[0m
 Learning Progress Tracker
 &gt; add students
 Enter student credentials or 'back' to return:
-&gt; Tasha Chem address1@mail.com
+&gt; Anjanette Uis address1@mail.com
 The student has been added.
-&gt; Natka Herculie address2@mail.com
+&gt; Charlena Girardo address2@mail.com
 The student has been added.
-&gt; Carmella Campman address3@mail.com
+&gt; Tasha Chem address3@mail.com
 The student has been added.
-&gt; Trixie Winer address4@mail.com
+&gt; Carmella Campman address4@mail.com
 The student has been added.
 &gt; back
 Total 4 students have been added.
@@ -785,10 +669,133 @@ Points updated.
 Type the name of a course to see details or 'back' to quit
 Most popular: Java, DSA, Databases, Spring
 Least popular: n/a
-Highest activity: Java
-Lowest activity: Java
+Highest activity: Java, DSA, Databases, Spring
+Lowest activity: n/a
 Easiest course: Java
 Hardest course: Spring
+?[1;31m
+Start test 36?[0m
+Learning Progress Tracker
+&gt; add students
+Enter student credentials or 'back' to return:
+&gt; Ann Agnella address1@mail.com
+The student has been added.
+&gt; Gwenette Anagnos address2@mail.com
+The student has been added.
+&gt; Marisa Firman address3@mail.com
+The student has been added.
+&gt; Charlena Girardo address4@mail.com
+The student has been added.
+&gt; back
+Total 4 students have been added.
+&gt; list
+Students:
+10000
+10001
+10002
+10003
+&gt; add points
+Enter an id and points or 'back' to return
+&gt; 10000 10 10 10 10
+Points updated.
+&gt; 10001 5 5 5 5
+Points updated.
+&gt; 10002 5 5 5 5
+Points updated.
+&gt; 10003 2 2 2 2
+Points updated.
+&gt; back
+&gt; statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: Java, DSA, Databases, Spring
+Least popular: n/a
+Highest activity: Java, DSA, Databases, Spring
+Lowest activity: n/a
+Easiest course: Java
+Hardest course: Java
+&gt; Java
+Java
+id	points	completed
+10000	10	1.7%
+10001	5	0.8%
+10002	5	0.8%
+10003	2	0.3%
+&gt; DSA
+DSA
+id	points	completed
+10000	10	2.5%
+10001	5	1.3%
+10002	5	1.3%
+10003	2	0.5%
+&gt; Databases
+Databases
+id	points	completed
+10000	10	2.1%
+10001	5	1.0%
+10002	5	1.0%
+10003	2	0.4%
+&gt; Spring
+Spring
+id	points	completed
+10000	10	1.8%
+10001	5	0.9%
+10002	5	0.9%
+10003	2	0.4%
+?[1;31m
+Start test 37?[0m
+Learning Progress Tracker
+&gt; add students
+Enter student credentials or 'back' to return:
+&gt; John Doe johnd@email.net
+The student has been added.
+&gt; Jane Spark jspark@yahoo.com
+The student has been added.
+&gt; back
+Total 2 students have been added.
+&gt; list
+Students:
+10000
+10001
+&gt; add points
+Enter an id and points or 'back' to return
+&gt; 10000 8 7 7 5
+Points updated.
+&gt; 10000 7 6 9 7
+Points updated.
+&gt; 10000 6 5 5 0
+Points updated.
+&gt; 10001 8 0 8 6
+Points updated.
+&gt; 10001 7 0 0 0
+Points updated.
+&gt; 10001 9 0 0 5
+Points updated.
+&gt; back
+&gt; statistics
+Type the name of a course to see details or 'back' to quit
+Most popular: Java, Databases, SpringLeast popular: DSA
+Highest activity: JavaLowest activity: DSA
+Easiest course: Java
+Hardest course: Spring
+&gt; Java
+Java
+id	points	completed
+10001	24	4.0%
+10000	21	3.5%
+&gt; DSA
+DSA
+id	points	completed
+10000	18	4.5%
+&gt; Databases
+Databases
+id	points	completed
+10000	21	4.4%
+10001	8	1.7%
+&gt; Spring
+Spring
+id	points	completed
+10000	12	2.2%
+10001	11	2.0%
 </pre>
 </span>
 </div>
@@ -800,7 +807,7 @@ Hardest course: Spring
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.3.3</a> at 7 lut 2024, 11:32:28</p>
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at 10 lut 2024, 22:25:32</p>
 </div>
 </div>
 </body>

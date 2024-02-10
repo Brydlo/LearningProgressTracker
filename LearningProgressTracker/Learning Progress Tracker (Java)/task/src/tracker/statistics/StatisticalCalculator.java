@@ -2,6 +2,7 @@ package tracker.statistics;
 
 import tracker.Points;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class StatisticalCalculator implements StatisticalAnalysis {
@@ -123,20 +124,20 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         Points studentPoints = pointsMap.get(id);
         Map<String, Double> studentCourseProgress = averageMap.getOrDefault(id, new HashMap<>());
 
-        double currentJava = studentCourseProgress.getOrDefault("Java", 0.0)
-                + ((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
+        double currentJava = /*studentCourseProgress.getOrDefault("Java", 0.0)
+                + */((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Java", currentJava);
 
-        double currentDSA = studentCourseProgress.getOrDefault("DSA", 0.0)
-                + ((studentPoints.getDSA() / DSA_POINTS_TO_COMPLETE) * 100);
+        double currentDSA = /*studentCourseProgress.getOrDefault("DSA", 0.0)
+                +*/ ((studentPoints.getDSA() / DSA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("DSA", currentDSA);
 
-        double currentDB = studentCourseProgress.getOrDefault("Databases", 0.0)
-                + ((studentPoints.getDatabases() / DB_POINTS_TO_COMPLETE) * 100);
+        double currentDB = /*studentCourseProgress.getOrDefault("Databases", 0.0)
+                + */((studentPoints.getDatabases() / DB_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Databases", currentDB);
 
-        double currentSpring = studentCourseProgress.getOrDefault("Spring", 0.0)
-                + ((studentPoints.getSpring() / SPRING_POINTS_TO_COMPLETE) * 100);
+        double currentSpring = /*studentCourseProgress.getOrDefault("Spring", 0.0)
+                + */((studentPoints.getSpring() / SPRING_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Spring", currentSpring);
 
         averageMap.put(id, studentCourseProgress);
@@ -168,27 +169,20 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     private void printPopularityMethod() {
-//        String[] courseNames = {"Java", "DSA", "Database", "Spring"};
-//        int i = 0;
         if (coursePopularityPoints.isEmpty()) {
             System.out.println("Most popular: n/a");
             System.out.println("Least popular: n/a");
         } else {
             long minValue = Long.MAX_VALUE;
             long maxValue = Long.MIN_VALUE;
-//            String minCourse = "n/a";
-//            String maxCourse = "n/a";
 
             for (Long value : coursePopularityPoints.values()) {
                 if (value < minValue) {
                     minValue = value;
-//                    minCourse = courseNames[i];
                 }
                 if (value > maxValue) {
                     maxValue = value;
-//                    maxCourse = courseNames[i];
                 }
-//                i++;
             }
             List<String> minKeys = new ArrayList<>();
             List<String> maxKeys = new ArrayList<>();
@@ -202,11 +196,11 @@ public class StatisticalCalculator implements StatisticalAnalysis {
             }
             if (minKeys.equals(maxKeys)) {
                 System.out.printf("Most popular: %s%n" +
-                            "Least popular: %s%n", String.join(", ", maxKeys), "n/a");
+                        "Least popular: %s%n", String.join(", ", maxKeys), "n/a");
             } else {
                 System.out.printf("Most popular: %s" +
                                 "Least popular: %s%n", String.join(", ", maxKeys),
-                                String.join(", ", minKeys));
+                        String.join(", ", minKeys));
             }
         }
     }
@@ -293,42 +287,49 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         if (pointsMap.size() == 0) {
             if (averageMap.isEmpty() || averageMap == null) {
                 System.out.printf("%s%nid\tpoints\tcompleted%n", name);
-            } else {
-                List<Map.Entry<Long, Map<String, Double>>> list = new ArrayList<>(averageMap.entrySet());
-                list.sort((entry1, entry2) -> {
-                    Points points1 = pointsMap.get(entry1.getKey());
-                    Points points2 = pointsMap.get(entry2.getKey());
-                    int courseComparison = switch (name) {
-                        case "Java", "java", "JAVA" -> Long.compare(points2.getJava(), points1.getJava());
-                        case "Dsa", "dsa", "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
-                        case "Databases", "DATABASES", "databases" ->
-                                Long.compare(points2.getDatabases(), points1.getDatabases());
-                        case "Spring", "SPRING", "spring" -> Long.compare(points2.getSpring(), points1.getSpring());
-                        default -> throw new IllegalArgumentException("Unknown course");
+            }
+        } else {
+            List<Map.Entry<Long, Map<String, Double>>> list = new ArrayList<>(averageMap.entrySet());
+            list.sort((entry1, entry2) -> {
+                Points points1 = pointsMap.get(entry1.getKey());
+                Points points2 = pointsMap.get(entry2.getKey());
+                int courseComparison = switch (name) {
+                    case "Java", "java", "JAVA" -> Long.compare(points2.getJava(), points1.getJava());
+                    case "Dsa", "dsa", "DSA" -> Long.compare(points2.getDSA(), points1.getDSA());
+                    case "Databases", "DATABASES", "databases" ->
+                            Long.compare(points2.getDatabases(), points1.getDatabases());
+                    case "Spring", "SPRING", "spring" -> Long.compare(points2.getSpring(), points1.getSpring());
+                    default -> throw new IllegalArgumentException("Unknown course");
+                };
+                return (courseComparison == 0)
+                        ? Long.compare(entry1.getKey(), entry2.getKey())
+                        : courseComparison;
+            });
+            System.out.printf("%s%nid\tpoints\tcompleted%n", name);
+
+            for (Map.Entry<Long, Map<String, Double>> entry : list) {
+                Long studentId = entry.getKey();
+                Points pointsFromMap = pointsMap.get(studentId);
+                Map<String, Double> courseProgress = entry.getValue();
+
+                if (courseProgress.containsKey(name)) {
+                    long points = switch (name) {
+                        case "Java", "java", "JAVA" -> pointsFromMap.getJava();
+                        case "Dsa", "dsa", "DSA" -> pointsFromMap.getDSA();
+                        case "Databases", "DATABASES", "databases" -> pointsFromMap.getDatabases();
+                        case "Spring", "SPRING", "spring" -> pointsFromMap.getSpring();
+                        default -> throw new IllegalArgumentException("Invalid course name: " + name);
                     };
-                    return (courseComparison == 0)
-                            ? Long.compare(entry1.getKey(), entry2.getKey())
-                            : courseComparison;
-                });
-                System.out.printf("%s%nid\tpoints\tcompleted%n", name);
-
-                for (Map.Entry<Long, Map<String, Double>> entry : list) {
-                    Long studentId = entry.getKey();
-                    Points pointsFromMap = pointsMap.get(studentId);
-                    Map<String, Double> courseProgress = entry.getValue();
-
-                    if (courseProgress.containsKey(name)) {
-                        long points = switch (name) {
-                            case "Java", "java", "JAVA" -> pointsFromMap.getJava();
-                            case "Dsa", "dsa", "DSA" -> pointsFromMap.getDSA();
-                            case "Databases", "DATABASES", "databases" -> pointsFromMap.getDatabases();
-                            case "Spring", "SPRING", "spring" -> pointsFromMap.getSpring();
-                            default -> throw new IllegalArgumentException("Invalid course name: " + name);
-                        };
-                        System.out.printf("%d\t%d\t%.2f%%n", studentId, points, courseProgress.get(name));
+                    if(courseProgress.get(name) == 0) {
+                        continue;
+                    } else {
+                    /*DecimalFormat dcformat = new DecimalFormat("#.#");
+                    String percentage = dcformat.format(courseProgress.get(name));*/
+                        System.out.printf("%d\t%d\t%.1f%%%n", studentId, points, courseProgress.get(name)/*percentage*/);
                     }
                 }
             }
         }
     }
 }
+

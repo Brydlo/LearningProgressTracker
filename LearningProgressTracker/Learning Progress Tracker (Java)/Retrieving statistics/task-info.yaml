@@ -1031,8 +1031,8 @@ files:
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/learn/step/14399#comment
-status: Failed
+status: Solved
 feedback:
-  message: Execution failed
-  time: "Wed, 07 Feb 2024 10:32:29 UTC"
+  message: Congratulations!
+  time: "Sat, 10 Feb 2024 21:25:32 UTC"
 record: 5
