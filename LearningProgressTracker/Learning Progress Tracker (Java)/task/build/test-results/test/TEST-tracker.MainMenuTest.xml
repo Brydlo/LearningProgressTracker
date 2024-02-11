@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tracker.MainMenuTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-10T21:25:32" hostname="DESKTOP-24EGSBM" time="0.02">
+<testsuite name="tracker.MainMenuTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-11T09:43:31" hostname="DESKTOP-24EGSBM" time="0.017">
   <properties/>
-  <testcase name="printMenu()" classname="tracker.MainMenuTest" time="0.02"/>
+  <testcase name="printMenu()" classname="tracker.MainMenuTest" time="0.017"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

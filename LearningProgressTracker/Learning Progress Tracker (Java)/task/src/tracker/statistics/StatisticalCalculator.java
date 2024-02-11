@@ -2,7 +2,6 @@ package tracker.statistics;
 
 import tracker.Points;
 
-import java.text.DecimalFormat;
 import java.util.*;
 
 public class StatisticalCalculator implements StatisticalAnalysis {
@@ -89,7 +88,7 @@ public class StatisticalCalculator implements StatisticalAnalysis {
     }
 
     public void printWholeText() {
-        printPopularityMethod();
+        printPopularity();
         printActivity();
         printDifficulty();
     }
@@ -124,24 +123,19 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         Points studentPoints = pointsMap.get(id);
         Map<String, Double> studentCourseProgress = averageMap.getOrDefault(id, new HashMap<>());
 
-        double currentJava = /*studentCourseProgress.getOrDefault("Java", 0.0)
-                + */((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
+        double currentJava = ((studentPoints.getJava() / JAVA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Java", currentJava);
 
-        double currentDSA = /*studentCourseProgress.getOrDefault("DSA", 0.0)
-                +*/ ((studentPoints.getDSA() / DSA_POINTS_TO_COMPLETE) * 100);
+        double currentDSA = ((studentPoints.getDSA() / DSA_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("DSA", currentDSA);
 
-        double currentDB = /*studentCourseProgress.getOrDefault("Databases", 0.0)
-                + */((studentPoints.getDatabases() / DB_POINTS_TO_COMPLETE) * 100);
+        double currentDB = ((studentPoints.getDatabases() / DB_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Databases", currentDB);
 
-        double currentSpring = /*studentCourseProgress.getOrDefault("Spring", 0.0)
-                + */((studentPoints.getSpring() / SPRING_POINTS_TO_COMPLETE) * 100);
+        double currentSpring = ((studentPoints.getSpring() / SPRING_POINTS_TO_COMPLETE) * 100);
         studentCourseProgress.put("Spring", currentSpring);
 
         averageMap.put(id, studentCourseProgress);
-
     }
 
     private void setCoursePopularity(long[] arrayWithPoints) {
@@ -281,7 +275,6 @@ public class StatisticalCalculator implements StatisticalAnalysis {
         }
     }
 
-    //-------------------------------------------------------------------------------------------------------------------
     private void printRanking(String name, Map<Long, Points> pointsMap) {
 
         if (pointsMap.size() == 0) {
@@ -323,8 +316,6 @@ public class StatisticalCalculator implements StatisticalAnalysis {
                     if(courseProgress.get(name) == 0) {
                         continue;
                     } else {
-                    /*DecimalFormat dcformat = new DecimalFormat("#.#");
-                    String percentage = dcformat.format(courseProgress.get(name));*/
                         System.out.printf("%d\t%d\t%.1f%%%n", studentId, points, courseProgress.get(name)/*percentage*/);
                     }
                 }

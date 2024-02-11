@@ -1,6 +1,5 @@
 package tracker;
 
-import java.util.Map;
 
 public class Points {
 
