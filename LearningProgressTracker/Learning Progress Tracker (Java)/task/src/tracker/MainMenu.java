@@ -3,9 +3,7 @@ package tracker;
 import tracker.Exceptions.*;
 import tracker.statistics.StatisticalCalculator;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class MainMenu {
     private static final Scanner s = new Scanner(System.in);
@@ -16,7 +14,9 @@ public class MainMenu {
     private final AddPoints addPoints = new AddPoints();
     private final StatisticalCalculator statisticalCalculator = new StatisticalCalculator();
     private Map<Long, Student> studentMap = new HashMap<>();
-    private final Map<Long, Points> pointsMap = new HashMap<>();
+    private Map<Long, Points> pointsMap = new HashMap<>();
+    private Map<Long, String> notifyMap = new HashMap<>();
+    private Set<String> nameForNotify = new HashSet<>();
 
     public void printMenu() {
 
@@ -35,6 +35,7 @@ public class MainMenu {
                 case "add points" -> printAddPoints();
                 case "find" -> printFind();
                 case "statistics" -> printStatisticMenu();
+                case "notify" -> printNotify();
                 default -> System.out.println("Unknown command!");
             }
         }
@@ -181,6 +182,69 @@ public class MainMenu {
                 default -> System.out.println("Unknown course.");
             }
         }
+    }
+    private void printNotify() {
+        long java = 600;
+        long dsa = 400;
+        long database = 480;
+        long spring = 550;
+        int count = 0;
+        boolean isNotified = false;
+
+
+        for (Map.Entry<Long, Points> entry : pointsMap.entrySet()) {
+            Points points = entry.getValue();
+            long id = entry.getKey();
+            Student student = studentMap.get(id);
+
+            if(points.getJava() == java /*&& !notifyMap.containsValue("Java")*/) {
+                System.out.printf("To: %s%n" +
+                                "Re: Your Learning Progress%n" +
+                                "Hello, %s %s! You have accomplished our %s course!%n",
+                        student.getEmail(),
+                        student.getName(),
+                        student.getLastName(),
+                        "Java");
+//                notifyMap.put(id, "Java");
+                isNotified = true;
+            }
+            if (points.getDSA() == dsa /*&& !notifyMap.containsValue("DSA")*/) {
+                System.out.printf("To: %s%n" +
+                        "Re: Your Learning Progress%n" +
+                        "Hello, %s %s! You have accomplished our %s course!%n",
+                        student.getEmail(),
+                        student.getName(),
+                        student.getLastName(),
+                        "DSA");
+//                notifyMap.put(id, "DSA");
+                isNotified = true;
+            }
+            if (points.getDatabases() == database && !notifyMap.containsValue("Database")) {
+                System.out.printf("To: %s%n" +
+                                "Re: Your Learning Progress%n" +
+                                "Hello, %s %s! You have accomplished our %s course!%n",
+                        student.getEmail(),
+                        student.getName(),
+                        student.getLastName(),
+                        "Database");
+//                notifyMap.put(id, "Database");
+                isNotified = true;
+
+            }
+            if (points.getSpring() == spring /*&& !notifyMap.containsValue("Spring")*/) {
+                System.out.printf("To: %s%n" +
+                                "Re: Your Learning Progress%n" +
+                                "Hello, %s %s! You have accomplished our %s course!%n",
+                        student.getEmail(),
+                        student.getName(),
+                        student.getLastName(),
+                        "Spring");
+//                notifyMap.put(id, "Spring");
+                isNotified = true;
+            }
+            if (isNotified) count++;
+        }
+        System.out.printf("Total %d students have been notified.%n", count);
     }
 }
 
