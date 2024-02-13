@@ -33,5 +33,20 @@ public class Points {
         return spring;
     }
 
+    public void setJava(long java) {
+        this.java = java;
+    }
+
+    public void setDSA(long DSA) {
+        this.DSA = DSA;
+    }
+
+    public void setDatabases(long databases) {
+        this.databases = databases;
+    }
+
+    public void setSpring(long spring) {
+        this.spring = spring;
+    }
 }
 //points: Java=12; DSA=13; Databases=14; Spring=15

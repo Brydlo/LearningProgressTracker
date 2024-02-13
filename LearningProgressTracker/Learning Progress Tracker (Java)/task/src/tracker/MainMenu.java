@@ -15,8 +15,7 @@ public class MainMenu {
     private final StatisticalCalculator statisticalCalculator = new StatisticalCalculator();
     private Map<Long, Student> studentMap = new HashMap<>();
     private Map<Long, Points> pointsMap = new HashMap<>();
-    private Map<Long, String> notifyMap = new HashMap<>();
-    private Set<String> nameForNotify = new HashSet<>();
+    private Map<Long, Points> copyOfPointsMap = new HashMap<>();
 
     public void printMenu() {
 
@@ -148,6 +147,7 @@ public class MainMenu {
                 }
             }
         }
+        copyOfPointsMap = pointsMap;
     }
     private void printFind() {
         System.out.println("Enter an id or 'back' to return:");
@@ -184,20 +184,19 @@ public class MainMenu {
         }
     }
     private void printNotify() {
-        long java = 600;
-        long dsa = 400;
-        long database = 480;
-        long spring = 550;
+        final long java = 600;
+        final long dsa = 400;
+        final long database = 480;
+        final long spring = 550;
         int count = 0;
         boolean isNotified = false;
 
 
-        for (Map.Entry<Long, Points> entry : pointsMap.entrySet()) {
+        for (Map.Entry<Long, Points> entry : copyOfPointsMap.entrySet()) {
             Points points = entry.getValue();
             long id = entry.getKey();
             Student student = studentMap.get(id);
-
-            if(points.getJava() == java /*&& !notifyMap.containsValue("Java")*/) {
+            if(points.getJava() == java) {
                 System.out.printf("To: %s%n" +
                                 "Re: Your Learning Progress%n" +
                                 "Hello, %s %s! You have accomplished our %s course!%n",
@@ -205,7 +204,8 @@ public class MainMenu {
                         student.getName(),
                         student.getLastName(),
                         "Java");
-//                notifyMap.put(id, "Java");
+                points.setJava(0L);
+                copyOfPointsMap.put(id, points);
                 isNotified = true;
             }
             if (points.getDSA() == dsa /*&& !notifyMap.containsValue("DSA")*/) {
@@ -216,10 +216,11 @@ public class MainMenu {
                         student.getName(),
                         student.getLastName(),
                         "DSA");
-//                notifyMap.put(id, "DSA");
+                points.setDSA(0L);
+                copyOfPointsMap.put(id, points);
                 isNotified = true;
             }
-            if (points.getDatabases() == database && !notifyMap.containsValue("Database")) {
+            if (points.getDatabases() == database) {
                 System.out.printf("To: %s%n" +
                                 "Re: Your Learning Progress%n" +
                                 "Hello, %s %s! You have accomplished our %s course!%n",
@@ -227,7 +228,8 @@ public class MainMenu {
                         student.getName(),
                         student.getLastName(),
                         "Database");
-//                notifyMap.put(id, "Database");
+                points.setDatabases(0L);
+                copyOfPointsMap.put(id, points);
                 isNotified = true;
 
             }
@@ -239,7 +241,8 @@ public class MainMenu {
                         student.getName(),
                         student.getLastName(),
                         "Spring");
-//                notifyMap.put(id, "Spring");
+                points.setSpring(0L);
+                copyOfPointsMap.put(id, points);
                 isNotified = true;
             }
             if (isNotified) count++;
